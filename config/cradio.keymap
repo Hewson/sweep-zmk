@@ -386,11 +386,11 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
-       CLOSETAB    XXX         PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp LG(MINUS) &kp UP    &kp LG(EQUAL) XXX      
+       CLOSETAB    XXX         PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp LG(MINUS) &kp UP    &kp LG(EQUAL) &kp LG(TAB)      
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
        &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT      &kp DOWN  &kp RIGHT     &kp TAB  
 //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤ 
-       &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   &kp DEL       XXX       XXX           &kp RET  
+       &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   &kp DEL       XXX       &kp LS(RET)   &kp RET  
 //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                            ___       ___                       ___      ___      
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
