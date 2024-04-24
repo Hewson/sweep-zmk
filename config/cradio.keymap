@@ -130,7 +130,7 @@
         };
 
 //lock screen
-        combo_at_symbol {
+        combo_lock {
             timeout-ms = <35>;
             key-positions = <0 9>;
             require-prior-idle-ms = <150>;
