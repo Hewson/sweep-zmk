@@ -114,12 +114,12 @@
         };
 
 //raycast
-        combo_raycast {
-            timeout-ms = <35>;
-            key-positions = <10 11 12 13>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp LS(LG(LC(LA(SPACE))))>;
-        };
+//        combo_raycast {
+//            timeout-ms = <35>;
+//            key-positions = <10 11 12 13>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp LS(LG(LC(LA(SPACE))))>;
+//        };
 
 //at symbol
         combo_at_symbol {
@@ -153,12 +153,12 @@
             bindings = <&kp LG(COMMA)>;
         };
         
-//        combo_cmdK {
-//            timeout-ms = <35>;
-//            key-positions = <14 15 16>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LG(K)>;
-//        };
+        combo_cmdK {
+            timeout-ms = <35>;
+            key-positions = <10 11 12 13>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp LG(K)>;
+        };
 
         combo_undo {
             timeout-ms = <35>;
@@ -391,7 +391,7 @@
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                     TAB_DN   &kp LEFT      &kp DOWN  &kp RIGHT     &kp TAB  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤ 
-   &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)               &kp F4   DELWORD       XXX       &kp LS(RET)   &kp RET  
+   &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)               &kp F4   DELWORD       &kp DEL   &kp LS(RET)   &kp RET  
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___       ___                       ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
