@@ -28,7 +28,7 @@
 //shortcuts
 #define HYPER_A &gqt LS(LG(LC(LALT))) A
 #define HYPER_C &gqt LS(LG(LC(LALT))) C
-#define MEH_R &gqt LS((LC(LALT)) R
+#define MEH_R &gqt LS(LC(LALT)) R
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
