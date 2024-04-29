@@ -28,6 +28,7 @@
 //shortcuts
 #define HYPER_A &gqt LS(LG(LC(LALT))) A
 #define HYPER_C &gqt LS(LG(LC(LALT))) C
+#define MEH_R &gqt LS((LC(LALT)) R
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
@@ -371,7 +372,7 @@
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
    &kp W     &kp L    &kp Y     &kp P      &kp B                              &kp Z    &kp F      &kp O       &kp U       AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &kp R    &kp S     &hl_l 1 T  &kp G                              &kp M    &hl_r 4 N  &kp E       &kp I       HYPER_A       
+   HYPER_C   MEH_R    &kp S     &hl_l 1 T  &kp G                              &kp M    &hl_r 4 N  &kp E       &kp I       HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    &kp Q     &kp J    &kp V     &kp D      &kp K                              &kp X    &kp H      AS(COMMA)   AS(DOT)     AS(FSLH)   
 //└────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
