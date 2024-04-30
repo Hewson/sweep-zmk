@@ -28,7 +28,6 @@
 //shortcuts
 #define HYPER_A &gqt LS(LG(LC(LALT))) A
 #define HYPER_C &gqt LS(LG(LC(LALT))) C
-#define MEH_R &gqt LS(LC(LALT)) R
 #define RAYCAST &kp LS(LG(LC(LA(SPACE))))
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
@@ -132,12 +131,12 @@
         };
 
 //esc
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <3 13>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp ESC>;
-        };
+//        combo_esc {
+//            timeout-ms = <50>;
+//            key-positions = <3 13>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp ESC>;
+//        };
 
 //lock screen
         combo_lock {
@@ -372,7 +371,7 @@
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
    &kp W     &kp L    &kp Y     &kp P      &kp B                              &kp Z    &kp F      &kp O       &kp U       AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   MEH_R    &kp S     &hl_l 1 T  &kp G                              &kp M    &hl_r 4 N  &kp E       &kp I       HYPER_A       
+   HYPER_C   &kp R    &kp S     &hl_l 1 T  &kp G                              &kp M    &hl_r 4 N  &kp E       &kp I       HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    &kp Q     &kp J    &kp V     &kp D      &kp K                              &kp X    &kp H      AS(COMMA)   AS(DOT)     AS(FSLH)   
 //└────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
@@ -423,7 +422,7 @@
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
    XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR           &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   XXX      XXX           &sk LGUI      &kp DEL       XXX                  &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      
+   &kp ESC  XXX           &sk LGUI      &kp DEL       XXX                  &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    XXX      XXX           XXX           XXX           XXX                  &kp N0    &kp N1   &kp N2   &kp N3   XXX            
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
@@ -435,7 +434,7 @@
                 other_layer {
                         bindings = <                    
 
-// layer 4 - other home row - left pinky
+// layer 4 - other home row - right index
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
    XXX      XXX      XXX      XXX      XXX                                 XXX      XXX      XXX      XXX      XXX        
