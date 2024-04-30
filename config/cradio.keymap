@@ -295,7 +295,6 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>; //updated from HM_TAPPING_TERM
-            //quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <15>;         // requires PR #1387
             bindings = <&mo>, <&kp>;
         };
@@ -369,13 +368,13 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &kp W     &kp L    &kp Y     &kp P      &kp B                              &kp Z    &kp F      &kp O       &kp U       AS (SEMI)      
+   &kp W     &kp L    &kp Y     &kp P      &kp B                              &kp Z    &kp F      &kp O       &kp U      AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &kp R    &kp S     &hl_l 1 T  &kp G                              &kp M    &hl_r 4 N  &kp E       &kp I       HYPER_A       
+   HYPER_C   &kp R    &kp S     &hl_l 1 T  &kp G                              &kp M    &hl_r 4 N  &kp E       &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &kp Q     &kp J    &kp V     &kp D      &kp K                              &kp X    &kp H      AS(COMMA)   AS(DOT)     AS(FSLH)   
+   &kp Q     &kp J    &kp V     &kp D      &kp K                              &kp X    &kp H      AS(COMMA)   AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    &sk LSHIFT  &mo 3                     &kp BSPC &gqt_l 2 SPACE       
+                                    &sk LSHIFT  &mo 3                    &as RGUI BSPC &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
@@ -386,11 +385,11 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   CLOSETAB    XXX         PLAINPASTE    REDO      REDO_TAB                TAB_UP   &kp LG(MINUS) &kp UP    &kp LG(EQUAL) &kp LG(TAB)      
+   CLOSETAB   XXX         PLAINPASTE    REDO      REDO_TAB                 TAB_UP   &kp LG(MINUS) &kp UP    &kp LG(EQUAL) &kp LG(TAB)      
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   &kp LSHFT   &kp LALT    &kp LGUI      XXX       XXX                     TAB_DN   &kp LEFT      &kp DOWN  &kp RIGHT     &kp TAB  
+   &kp LSHFT  &kp LALT    &kp LGUI      XXX       XXX                      TAB_DN   &kp LEFT      &kp DOWN  &kp RIGHT     &kp TAB  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤ 
-   &kp LG(Z)   &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)               &kp F4   DELWORD       &kp DEL   &kp LS(RET)   &kp RET  
+   &kp LG(Z)  &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                &kp F4   DELWORD       &kp DEL   &kp LS(RET)   &kp RET  
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___       ___                       ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
@@ -420,11 +419,11 @@
 // layer 3 - numbers and settings and nav - left thumb
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR           &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  
+   XXX      XXX      XXX      XXX      XXX                                 &kp MINUS &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   &kp ESC  XXX           &sk LGUI      &kp DEL       XXX                  &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      
+   &kp ESC  XXX      &sk LGUI &kp DEL  XXX                                 &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   XXX      XXX           XXX           XXX           XXX                  &kp N0    &kp N1   &kp N2   &kp N3   XXX            
+   XXX      XXX      XXX      XXX      XXX                                 &kp N0    &kp N1   &kp N2   &kp N3   XXX            
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                      ___       ___                      ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
@@ -437,7 +436,7 @@
 // layer 4 - other home row - right index
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   XXX      XXX      XXX      XXX      XXX                                 XXX      XXX      XXX      XXX      XXX        
+   XXX      XXX      XXX      XXX      XXX                                 XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    &kp ESC  BACK     FORWARD  CMD_K    XXX                                 XXX      XXX      XXX      XXX      XXX        
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
