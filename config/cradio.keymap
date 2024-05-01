@@ -39,6 +39,7 @@
 #define BACK &kp LG(LBKT)  
 #define FORWARD &kp LG(RBKT)
 #define CMD_K &kp LG(K)
+#define MIN &kp LG(H)
 #define LOCK &kp LC(LG(Q))
 
 #define XXX &none
@@ -258,7 +259,7 @@
 //copy link
         combo_copylink {
             timeout-ms = <35>;
-            key-positions = <10 11 12>;
+            key-positions = <12 13 14>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LS(LG(C))>;
         };
@@ -303,7 +304,6 @@
             label = "HOMEROW_MODS_LEFT";
             #binding-cells = <2>;
             bindings = <&kp>,  <&kp>;
-
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -316,7 +316,6 @@
             label = "HOMEROW_MODS_RIGHT";
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
-
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick_tap_ms = <175>;
@@ -329,7 +328,6 @@
             label = "HOMEROW_LAYERS_LEFT";
             #binding-cells = <2>;
             bindings = <&mo>,  <&kp>;
-
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
@@ -342,7 +340,6 @@
             label = "HOMEROW_LAYERS_RIGHT";
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
-
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick_tap_ms = <175>;
@@ -385,11 +382,11 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   CLOSETAB   XXX         PLAINPASTE    REDO      REDO_TAB                 TAB_UP   &kp LG(MINUS) &kp UP    &kp LG(EQUAL) &kp LG(TAB)      
+   CLOSETAB   MIN        PLAINPASTE    REDO      REDO_TAB                  TAB_UP   &kp LG(MINUS) &kp UP    &kp LG(EQUAL) &kp LG(TAB)      
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   &kp LSHFT  &kp LALT    &kp LGUI      XXX       XXX                      TAB_DN   &kp LEFT      &kp DOWN  &kp RIGHT     &kp TAB  
+   &kp LSHFT  &kp LALT   &kp LGUI      XXX       XXX                       TAB_DN   &kp LEFT      &kp DOWN  &kp RIGHT     &kp TAB  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤ 
-   &kp LG(Z)  &kp LG(X)   &kp LG(C)     &kp LG(V) &kp LG(B)                &kp F4   DELWORD       &kp BSPC   &kp LS(RET)  &kp RET  
+   &kp LG(Z)  &kp LG(X)  &kp LG(C)     &kp LG(V) &kp LG(B)                 &kp F4   DELWORD       &kp DEL   &kp LS(RET)   &kp RET  
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___       ___                        ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
