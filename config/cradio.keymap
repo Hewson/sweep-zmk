@@ -39,7 +39,7 @@
 #define BACK &kp LG(LBKT)  
 #define FORWARD &kp LG(RBKT)
 #define CMD_K &kp LG(K)
-#define MIN &kp LG(H)
+#define MIN &kp LG(M)
 #define LOCK &kp LC(LG(Q))
 
 #define XXX &none
