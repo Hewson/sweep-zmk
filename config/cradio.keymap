@@ -109,7 +109,7 @@
 //select line
         combo_sel_line { 
             timeout-ms = <35>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&sel_line>;
         };
