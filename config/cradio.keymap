@@ -410,7 +410,7 @@
 // layer 1 - navigation and editing - left index
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   CLOSETAB   MIN        PLAINPASTE    REDO      REDO_TAB                  TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) XXX      
+   CLOSETAB   MIN        PLAINPASTE    REDO      REDO_TAB                  TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) CMD_W      
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    &kp LSHFT  &kp LALT   &kp LGUI      XXX       XXX                       TAB_DN    &kp LEFT      &kp DOWN &kp RIGHT     &kp TAB  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤ 
