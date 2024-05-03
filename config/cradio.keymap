@@ -251,14 +251,6 @@
             bindings = <&kp LG(N)>;
         };
 
-//close tab
-        combo_cmdW {
-            timeout-ms = <35>;
-            key-positions = <1 2 3>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp LG(W)>;
-        };
-
 //refresh
         combo_cmdR {
             timeout-ms = <35>;
