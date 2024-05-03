@@ -299,6 +299,14 @@
             bindings = <&kp LG(S)>;
         };
 
+//close tab
+        combo_cmdW {
+            timeout-ms = <35>;
+            key-positions = <11 13>;
+            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            bindings = <&kp LG(W)>;
+        };
+
 //quit
         combo_cmdQ {
             timeout-ms = <35>;
