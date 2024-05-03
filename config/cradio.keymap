@@ -150,7 +150,7 @@
         combo_esc {
             timeout-ms = <35>;
             key-positions = <16 17>;
-            require-prior-idle-ms = <sel_line>;
+            require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp ESC>;
         };
 
