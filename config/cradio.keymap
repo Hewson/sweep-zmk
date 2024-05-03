@@ -397,9 +397,9 @@
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
    &kp W     &kp L     &kp Y    &kp P      &kp B                              &kp Z    &kp F      &kp O       &kp U      AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                              &kp M    &hl_r 4 N  &kp E       &hl_r 5 I  HYPER_A       
+   HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                              &kp M    &hl_r 5 N  &kp E       &kp 5 I    HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &kp Q     &kp J     &kp V    &kp D      &kp K                              &kp X    &kp H      AS(COMMA)   AS(DOT)    AS(FSLH)   
+   &hl_l 4 Q &kp J     &kp V    &kp D      &kp K                              &kp X    &kp H      AS(COMMA)   AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT  &key_repeat               &as RGUI BSPC &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
@@ -433,7 +433,7 @@
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    XXX      XXX      XXX      &kp LS(N9)    &kp LS(N0)                     &kp BSLH   &kp C_VOL_DN &kp C_BRI_DN   &kp C_VOL_UP   XXX
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   XXX      XXX      XXX      &kp LBKT      &kp RBKT                       &kp F4     XXX          XXX            XXX            XXX     
+   XXX      XXX      XXX      &kp LBKT      &kp RBKT                       XXX        XXX          XXX            XXX            XXX     
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___       ___                        ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
@@ -460,12 +460,12 @@
                 other_layer {
                         bindings = <                    
 
-// layer 4 - other home row - right index
+// layer 4 - other home row - left pinky
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
    XXX      XXX      XXX      XXX      XXX                                 XXX      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   &kp ESC  BACK     CMD_W    CMD_K    XXX                                 XXX      XXX      XXX      XXX      XXX        
+   XXX      XXX      XXX      XXX      XXX                                 XXX      XXX      XXX      XXX      XXX        
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    XXX      XXX      XXX      XXX      XXX                                 XXX      XXX      XXX      XXX      XXX        
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
@@ -476,7 +476,7 @@
                 sym_layer {
                         bindings = <                    
 
-// layer 5 - right ring
+// layer 5 - right index
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
    XXX      XXX       &kp LS(N3) &kp LS(N7)      XXX                       XXX      XXX      XXX      XXX      XXX        
