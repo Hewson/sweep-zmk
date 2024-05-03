@@ -14,7 +14,7 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define KEYS_T LH1 LH0 RH0 RH1           
 
-#define HM_TAPPING_TERM 350
+#define HM_TAPPING_TERM 400
 
 #define DEFAULT 0
 #define LOWER   1
@@ -102,24 +102,56 @@
 //autobracket        
         combo_brackets { 
             timeout-ms = <35>;
-            key-positions = <26 27 28>;
-            require-prior-idle-ms = <150>;
+            key-positions = <16 18>;
+            require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&auto_brackets>;
+        };
+
+//select all
+        combo_selall {
+            timeout-ms = <35>;
+            key-positions = <10 14>;
+            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            bindings = <&kp LG(A)>;
         };
 
 //select line
         combo_sel_line { 
             timeout-ms = <35>;
-            key-positions = <12 13>;
+            key-positions = <10 13>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&sel_line>;
+        };
+
+//cmd k
+        combo_cmdK { 
+            timeout-ms = <35>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            bindings = <&sel_line>;
+        };
+
+//esc
+        combo_esc {
+            timeout-ms = <35>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            bindings = <&kp ESC>;
+        };
+
+//close tab
+        combo_cmdW {
+            timeout-ms = <35>;
+            key-positions = <11 13>;
+            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            bindings = <&kp LG(W)>;
         };
 
 //aprostophe 
         combo_aprostophe {
             timeout-ms = <35>;
             key-positions = <16 17 18>;
-            require-prior-idle-ms = <10>;
+            require-prior-idle-ms = <20>;
             bindings = <&kp SQT>;
         };
 
@@ -127,7 +159,7 @@
         combo_hyphen {
             timeout-ms = <35>;
             key-positions = <16 17 18 19>;
-            require-prior-idle-ms = <10>;
+            require-prior-idle-ms = <20>;
             bindings = <&kp MINUS>;
         };
 
@@ -143,16 +175,8 @@
         combo_at_symbol {
             timeout-ms = <50>;
             key-positions = <11 12 13>;
-            require-prior-idle-ms = <10>;
+            require-prior-idle-ms = <20>;
             bindings = <&kp LS(N2)>;
-        };
-
-//esc
-        combo_esc {
-            timeout-ms = <35>;
-            key-positions = <16 17>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
-            bindings = <&kp ESC>;
         };
 
 //lock screen
@@ -179,13 +203,6 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(COMMA)>;
         };
-        
-//        combo_cmdK {
-//            timeout-ms = <35>;
-//            key-positions = <10 11 12 13>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LG(K)>;
-//        };
 
 //undo
         combo_undo {
@@ -217,14 +234,6 @@
             key-positions = <20 22>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(X)>;
-        };
-
-//select all
-        combo_selall {
-            timeout-ms = <35>;
-            key-positions = <10 13>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
-            bindings = <&kp LG(A)>;
         };
 
 //to do bullets
@@ -289,14 +298,6 @@
             key-positions = <14 24>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(S)>;
-        };
-
-//close tab
-        combo_cmdW {
-            timeout-ms = <35>;
-            key-positions = <11 13>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
-            bindings = <&kp LG(W)>;
         };
 
 //quit
