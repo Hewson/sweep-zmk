@@ -17,8 +17,8 @@
 #define HM_TAPPING_TERM 350
 
 #define COMBO_FAST 20
-#define COMBO_NORMAL 35
-#define COMBO_SLOW 50
+#define COMBO_NORMAL 30
+#define COMBO_SLOW 45
 
 #define DEFAULT 0
 #define LOWER   1
@@ -145,7 +145,7 @@
 
 //esc
         combo_esc {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <12 13>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp ESC>;
@@ -353,7 +353,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <75>;         // requires PR #1387
+            require-prior-idle-ms = <100>;         // requires PR #1387
             bindings = <&kp>, <&kp>;
         };
         gqt_l: thumb_right_hold {
