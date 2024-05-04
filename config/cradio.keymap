@@ -14,7 +14,7 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define KEYS_T LH1 LH0 RH0 RH1           
 
-#define HM_TAPPING_TERM 400
+#define HM_TAPPING_TERM 350
 
 #define DEFAULT 0
 #define LOWER   1
@@ -110,7 +110,7 @@
 //delword
         combo_del_word {
             timeout-ms = <30>;
-            key-positions = <16 19>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <DELWORD>;
         };
@@ -134,7 +134,7 @@
 //cmd k
         combo_cmdK { 
             timeout-ms = <35>;
-            key-positions = <16 17>;
+            key-positions = <16 19>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
