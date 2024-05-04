@@ -16,6 +16,10 @@
 
 #define HM_TAPPING_TERM 350
 
+#define COMBO_FAST 20
+#define COMBO_NORMAL 35
+#define COMBO_SLOW 50
+
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
@@ -101,7 +105,7 @@
 
 //autobracket        
         combo_brackets { 
-            timeout-ms = <50>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <26 27 28>;
             require-prior-idle-ms = <150>;
             bindings = <&auto_brackets>;
@@ -109,7 +113,7 @@
 
 //delword
         combo_del_word {
-            timeout-ms = <25>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <16 17>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <DELWORD>;
@@ -117,7 +121,7 @@
 
 //select all
         combo_selall {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <10 14>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp LG(A)>;
@@ -125,7 +129,7 @@
 
 //select line
         combo_sel_line { 
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <10 13>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&sel_line>;
@@ -133,7 +137,7 @@
 
 //cmd k
         combo_cmdK { 
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <16 19>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
@@ -141,7 +145,7 @@
 
 //esc
         combo_esc {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <12 13>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp ESC>;
@@ -149,7 +153,7 @@
 
 //close tab
         combo_cmdW {
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <11 13>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp LG(W)>;
@@ -157,7 +161,7 @@
 
 //tab
         combo_tab {
-            timeout-ms = <30>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <16 18>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp TAB>;
@@ -165,7 +169,7 @@
 
 //aprostophe 
         combo_aprostophe {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17 18>;
             require-prior-idle-ms = <20>;
             bindings = <&kp SQT>;
@@ -173,7 +177,7 @@
 
 //hypen
         combo_hyphen {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17 18 19>;
             require-prior-idle-ms = <20>;
             bindings = <&kp MINUS>;
@@ -181,7 +185,7 @@
 
 //raycast
 //        combo_raycast {
-//            timeout-ms = <35>;
+//            timeout-ms = <COMBO_NORMAL>;
 //            key-positions = <10 11 12 13>;
 //            require-prior-idle-ms = <150>;
 //            bindings = <&kp LS(LG(LC(LA(SPACE))))>;
@@ -189,7 +193,7 @@
 
 //at symbol
         combo_at_symbol {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <11 12 13>;
             require-prior-idle-ms = <20>;
             bindings = <&kp LS(N2)>;
@@ -197,7 +201,7 @@
 
 //back
         combo_back {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <11 12>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <BACK>;
@@ -205,7 +209,7 @@
 
 //minimize
         combo_minimize {
-            timeout-ms = <50>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <1 2 3>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <MIN>;
@@ -213,7 +217,7 @@
 
 //lock screen
         combo_lock {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <0 9>;
             require-prior-idle-ms = <150>;
             bindings = <LOCK>;
@@ -221,7 +225,7 @@
 
 //find        
         combo_find {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <21 22 23>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(F)>;
@@ -230,7 +234,7 @@
 
 //comma
         combo_cmdComma {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <5 15>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(COMMA)>;
@@ -238,7 +242,7 @@
 
 //undo
         combo_undo {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <20 21>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(Z)>;
@@ -246,7 +250,7 @@
 
 //copy
         combo_copy {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <21 22>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(C)>;
@@ -254,7 +258,7 @@
 
 //paste
         combo_paste {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <21 23>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(V)>;
@@ -262,7 +266,7 @@
 
 //cut
         combo_cut {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <20 22>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(X)>;
@@ -270,7 +274,7 @@
 
 //to do bullets
         combo_cmdL {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <17 18 19>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(L)>;
@@ -278,7 +282,7 @@
 
 //search files
         combo_cmdO {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <5 7>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(O)>;
@@ -286,7 +290,7 @@
 
 //new
         combo_cmdN {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <5 16>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(N)>;
@@ -294,7 +298,7 @@
 
 //refresh
         combo_cmdR {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <2 3 4>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(R)>;
@@ -302,7 +306,7 @@
 
 //bullets
         combo_bullets {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <6 16>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(LS(N8))>;
@@ -310,7 +314,7 @@
 
 //hyper hyphen        
         combo_cmdHyphen {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <4 14>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LA(LC(LS(LG(MINUS))))>;
@@ -318,7 +322,7 @@
 
 //copy link
         combo_copylink {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <12 13 14>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LS(LG(C))>;
@@ -326,7 +330,7 @@
         
 //save
         combo_cmdS {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <14 24>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(S)>;
@@ -334,7 +338,7 @@
 
 //quit
         combo_cmdQ {
-            timeout-ms = <35>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <1 2 7 8>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(Q)>;
