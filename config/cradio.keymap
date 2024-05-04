@@ -102,7 +102,7 @@
 //autobracket        
         combo_brackets { 
             timeout-ms = <35>;
-            key-positions = <16 18>;
+            key-positions = <17 18>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&auto_brackets>;
         };
