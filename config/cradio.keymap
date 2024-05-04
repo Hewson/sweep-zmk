@@ -101,16 +101,16 @@
 
 //autobracket        
         combo_brackets { 
-            timeout-ms = <25>;
-            key-positions = <17 18>;
+            timeout-ms = <35>;
+            key-positions = <26 27 28>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&auto_brackets>;
         };
 
 //delword
         combo_del_word {
-            timeout-ms = <25>;
-            key-positions = <16 18>;
+            timeout-ms = <30>;
+            key-positions = <16 19>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <DELWORD>;
         };
@@ -149,7 +149,7 @@
 
 //close tab
         combo_cmdW {
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             key-positions = <11 13>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp LG(W)>;
