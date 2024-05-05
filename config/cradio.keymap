@@ -115,7 +115,7 @@
 //delword
         combo_del_word {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <17 28>;
+            key-positions = <16 27>;
             require-prior-idle-ms = <150>;
             bindings = <DELWORD>;
         };
