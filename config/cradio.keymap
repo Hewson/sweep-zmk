@@ -17,7 +17,7 @@
 #define HM_TAPPING_TERM 350
 #define COMBO_TAPPING_TERM 600
 
-#define COMBO_FAST 15
+#define COMBO_FAST 20
 #define COMBO_NORMAL 30
 #define COMBO_SLOW 45
 
