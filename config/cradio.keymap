@@ -168,14 +168,6 @@
             bindings = <&kp TAB>;
         };
 
-//enter
-        combo_enter {
-            timeout-ms = <COMBO_NORMAL>;
-            key-positions = <16 17 28>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp RET>;
-        };
-
 //aprostophe 
         combo_aprostophe {
             timeout-ms = <COMBO_SLOW>;
@@ -316,8 +308,8 @@
 //hyper hyphen        
         combo_cmdHyphen {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <4 14>;
-            require-prior-idle-ms = <150>;
+            key-positions = <3 13>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LA(LC(LS(LG(MINUS))))>;
         };
 
