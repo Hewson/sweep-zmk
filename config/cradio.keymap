@@ -173,7 +173,7 @@
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <16 17 28>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp ENT>;
+            bindings = <&kp RET>;
         };
 
 //aprostophe 
