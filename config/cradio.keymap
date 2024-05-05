@@ -168,6 +168,14 @@
             bindings = <&kp TAB>;
         };
 
+//enter
+        combo_enter {
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <16 17 28>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp ENT>;
+        };
+
 //aprostophe 
         combo_aprostophe {
             timeout-ms = <COMBO_SLOW>;
@@ -424,11 +432,11 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &kp W     &kp L     &kp Y    &kp P      &kp B                              &kp Z    &kp F      &kp O       &kp U      AS (SEMI)      
+   &kp W     &kp L     &kp Y   &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                              &kp M    &hl_r 5 N  &kp E       &kp I      HYPER_A       
+   HYPER_C   &hl_l 3 R &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q &kp J     &kp V    &kp D      &kp K                              &kp X    &kp H      AS(COMMA)   AS(DOT)    AS(FSLH)   
+   &hl_l 4 Q &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬──-──┴──-─┬─-───┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT  &key_repeat               &as RGUI BSPC &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
@@ -475,11 +483,11 @@
 // layer 3 - numbers and settings and nav - left ring finger
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   XXX      XXX      XXX      XXX      XXX                                 &kp F4    &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  
+   XXX      XXX      XXX      XXX      XXX                                 &kp F4   &kp N7   &kp N8   &kp N9   &kp LS(EQUAL)  
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   &kp ESC  XXX      XXX      &kp DEL  XXX                                 &kp DOT   &kp N4   &kp N5   &kp N6   &kp EQUAL      
+   &kp ESC  XXX      XXX      &kp DEL  XXX                                 &kp DOT  &kp N4   &kp N5   &kp N6   &kp EQUAL      
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   XXX      XXX      XXX      XXX      XXX                                 &kp N0    &kp N1   &kp N2   &kp N3   XXX            
+   XXX      XXX      XXX      XXX      XXX                                 &kp N0   &kp N1   &kp N2   &kp N3   XXX            
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                      ___       ___                       ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
@@ -512,7 +520,7 @@
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
 &kp LS(N1) &kp LS(N5) &kp LS(N4) &kp LS(N8)      XXX                       XXX      XXX      XXX      XXX      XXX        
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   XXX      XXX       XXX      XXX               XXX                       XXX      XXX      XXX      XXX      XXX        
+   XXX      XXX       XXX        XXX             XXX                       XXX      XXX      XXX      XXX      XXX        
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___       ___                        ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
