@@ -17,7 +17,7 @@
 #define HM_TAPPING_TERM 350
 #define COMBO_TAPPING_TERM 600
 
-#define COMBO_FAST 20
+#define COMBO_FAST 15
 #define COMBO_NORMAL 30
 #define COMBO_SLOW 45
 
@@ -138,7 +138,7 @@
 
 //cmd k
         combo_cmdK { 
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <26 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
