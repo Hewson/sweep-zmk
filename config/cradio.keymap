@@ -138,8 +138,8 @@
 
 //cmd k
         combo_cmdK { 
-            timeout-ms = <COMBO_NORMAL>;
-            key-positions = <26 17>;
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -155,7 +155,7 @@
 //close tab
         combo_cmdW {
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <21 12>;
+            key-positions = <22 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(W)>;
         };
@@ -163,8 +163,8 @@
 //tab
         combo_tab {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <16 17>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            key-positions = <26 27>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp TAB>;
         };
 
@@ -195,7 +195,7 @@
 //back
         combo_back {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <11 13>;
+            key-positions = <21 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <BACK>;
         };
