@@ -15,6 +15,7 @@
 #define KEYS_T LH1 LH0 RH0 RH1           
 
 #define HM_TAPPING_TERM 350
+#define COMBO_TAPPING_TERM 600
 
 #define COMBO_FAST 20
 #define COMBO_NORMAL 30
@@ -123,7 +124,7 @@
         combo_selall {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <10 14>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(A)>;
         };
 
@@ -131,7 +132,7 @@
         combo_sel_line { 
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <10 13>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&sel_line>;
         };
 
@@ -139,23 +140,23 @@
         combo_cmdK { 
             timeout-ms = <COMBO_FAST>;
             key-positions = <26 17>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
 
 //esc
         combo_esc {
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <12 23>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp ESC>;
         };
 
 //close tab
         combo_cmdW {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <11 13>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <12 23>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(W)>;
         };
 
@@ -163,7 +164,7 @@
         combo_tab {
             timeout-ms = <COMBO_FAST>;
             key-positions = <16 18>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp TAB>;
         };
 
@@ -194,8 +195,8 @@
 //back
         combo_back {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <21 12>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            key-positions = <11 13>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <BACK>;
         };
 
@@ -203,7 +204,7 @@
         combo_minimize {
             timeout-ms = <COMBO_SLOW>;
             key-positions = <1 2 3>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <MIN>;
         };
 
