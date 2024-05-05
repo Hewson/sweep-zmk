@@ -114,8 +114,8 @@
 //delword
         combo_del_word {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <26 17>;
-            require-prior-idle-ms = <HM_TAPPING_TERM>;
+            key-positions = <17 28>;
+            require-prior-idle-ms = <150>;
             bindings = <DELWORD>;
         };
 
@@ -138,7 +138,7 @@
 //cmd k
         combo_cmdK { 
             timeout-ms = <COMBO_FAST>;
-            key-positions = <16 17>;
+            key-positions = <26 17>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -162,7 +162,7 @@
 //tab
         combo_tab {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <16 19>;
+            key-positions = <16 18>;
             require-prior-idle-ms = <HM_TAPPING_TERM>;
             bindings = <&kp TAB>;
         };
