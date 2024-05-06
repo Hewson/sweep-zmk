@@ -139,8 +139,8 @@
 
 //cmd k
         combo_cmdK { 
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <22 23>;
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -164,7 +164,7 @@
 //close tab
         combo_cmdW {
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <22 13>;
+            key-positions = <22 23>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(W)>;
         };
@@ -435,11 +435,11 @@
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
    &kp W     &kp L     &kp Y   &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &kp R     &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
+   HYPER_C   &hl_l 3 R &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    &hl_l 4 Q &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                &sk LSHIFT   &mo 3                  &as RGUI BSPC   &gqt_l 2 SPACE       
+                                &sk LSHIFT   SK_HYPER                  &as RGUI BSPC   &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
@@ -469,7 +469,7 @@
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
    XXX      XXX      &kp LS(LBKT)  &kp LS(RBKT)  XXX                       &kp TILDE  &kp C_PP      &kp C_BRI_UP   &kp C_NEXT     XXX     
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   SK_HYPER XXX      &kp LS(N9)    &kp LS(N0)    XXX                       &kp BSLH   &kp C_VOL_DN  &kp C_BRI_DN   &kp C_VOL_UP   XXX
+   XXX      XXX      &kp LS(N9)    &kp LS(N0)    XXX                       &kp BSLH   &kp C_VOL_DN  &kp C_BRI_DN   &kp C_VOL_UP   XXX
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    XXX      XXX      &kp LBKT      &kp RBKT      XXX                       XXX        XXX           XXX            XXX            XXX     
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
