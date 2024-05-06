@@ -139,8 +139,8 @@
 
 //cmd k
         combo_cmdK { 
-            timeout-ms = <COMBO_NORMAL>;
-            key-positions = <12 13>;
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <22 23>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -435,11 +435,11 @@
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
    &kp W     &kp L     &kp Y   &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &hl_l 3 R &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
+   HYPER_C   &kp R     &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    &hl_l 4 Q &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                &sk LSHIFT   &key_repeat             &as RGUI BSPC   &gqt_l 2 SPACE       
+                                &sk LSHIFT   &mo 3                  &as RGUI BSPC   &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
