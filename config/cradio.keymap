@@ -139,7 +139,7 @@
 //cmd k
         combo_cmdK { 
             timeout-ms = <COMBO_FAST>;
-            key-positions = <16 17>;
+            key-positions = <12 23>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -147,18 +147,18 @@
 //esc
         combo_esc {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <12 13>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp ESC>;
         };
 
 //enter
-        combo_enter {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <17 28>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp RET>;
-        };
+//        combo_enter {
+//        timeout-ms = <COMBO_FAST>;
+//            key-positions = <17 28>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <&kp RET>;
+//        };
 
 //close tab
         combo_cmdW {
@@ -168,12 +168,12 @@
             bindings = <&kp LG(W)>;
         };
 
-//tab 
-        combo_tab {
+//enter 
+        combo_enter {
             timeout-ms = <COMBO_FAST>;
             key-positions = <26 27>;
             require-prior-idle-ms = <150>;
-            bindings = <&kp TAB>;
+            bindings = <&kp RET>;
         };
 
 //aprostophe 
