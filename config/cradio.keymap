@@ -114,7 +114,7 @@
 
 //delword
         combo_del_word {
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <16 27>;
             require-prior-idle-ms = <150>;
             bindings = <DELWORD>;
@@ -138,15 +138,15 @@
 
 //cmd k
         combo_cmdK { 
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <12 23>;
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
 
 //esc
         combo_esc {
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp ESC>;
@@ -170,7 +170,7 @@
 
 //enter 
         combo_enter {
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <26 27>;
             require-prior-idle-ms = <150>;
             bindings = <&kp RET>;
