@@ -31,7 +31,7 @@
 //shortcuts
 #define HYPER_A &gqt LS(LG(LC(LALT))) A
 #define HYPER_C &gqt LS(LG(LC(LALT))) C
-#define RAYCAST &kp LS(LG(LC(LA(SPACE))))
+#define RAYCAST &kp LS(LG(LC(LA(A))))
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
 #define PLAINPASTE &kp LS(LA(LG(V))) 
@@ -153,13 +153,13 @@
             bindings = <&kp ESC>;
         };
 
-//enter
-//        combo_enter {
-//        timeout-ms = <COMBO_FAST>;
-//            key-positions = <17 28>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <&kp RET>;
-//        };
+//raycast
+        combo_raycast {
+        timeout-ms = <COMBO_NORMAL>;
+            key-positions = <17 28>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <RAYCAST>;
+        };
 
 //close tab
         combo_cmdW {
