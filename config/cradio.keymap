@@ -302,7 +302,7 @@
 //new
         combo_cmdN {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <6 17>;
+            key-positions = <5 16>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(N)>;
         };
