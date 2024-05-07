@@ -164,9 +164,9 @@
 
 //raycast
         combo_raycast {
-        timeout-ms = <COMBO_NORMAL>;
-            key-positions = <26 17 18>;
-            require-prior-idle-ms = <150>;
+        timeout-ms = <COMBO_FAST>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <RAYCAST>;
         };
 
@@ -179,12 +179,12 @@
         };
 
 //enter 
-        combo_enter {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <16 17>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp RET>;
-        };
+//        combo_enter {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <16 17>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <&kp RET>;
+//        };
 
 //aprostophe 
         combo_aprostophe {
