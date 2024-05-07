@@ -180,9 +180,9 @@
 
 //enter 
         combo_enter {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <27 28>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp RET>;
         };
 
