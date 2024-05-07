@@ -107,9 +107,9 @@
 
 //autobracket        
         combo_brackets { 
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <26 27 28>;
-            require-prior-idle-ms = <150>;
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <26 27>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&auto_brackets>;
         };
 
@@ -181,8 +181,8 @@
 //enter 
         combo_enter {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <26 27>;
-            require-prior-idle-ms = <150>;
+            key-positions = <27 28>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp RET>;
         };
 
