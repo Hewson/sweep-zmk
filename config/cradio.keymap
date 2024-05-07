@@ -15,7 +15,7 @@
 #define KEYS_T LH1 LH0 RH0 RH1           
 
 #define HM_TAPPING_TERM 350
-#define COMBO_TAPPING_TERM 600
+#define COMBO_TAPPING_TERM 500
 
 #define COMBO_FAST 20
 #define COMBO_NORMAL 30
@@ -427,7 +427,7 @@
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <500>;
+            tapping_term_ms = <400>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -442,11 +442,11 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &kp W     &kp L   &kp Y     &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
+   &kp W     &kp L     &kp Y   &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 3 C &kp R   &kp S     &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      &kp A       
+   &kp C    &hl_l 3 R  &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      &kp A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q &kp J   &kp V     &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
+   &hl_l 4 Q &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                 &sk LSHIFT   SK_HYPER                  &as RGUI BSPC   &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
