@@ -115,7 +115,7 @@
 
 //delword
         combo_del_word {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <16 27>;
             require-prior-idle-ms = <50>;
             bindings = <DELWORD>;
@@ -254,8 +254,8 @@
 //undo
         combo_undo {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <20 21>;
-            require-prior-idle-ms = <150>;
+            key-positions = <7 17>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(Z)>;
         };
 
@@ -310,8 +310,8 @@
 //refresh
         combo_cmdR {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <2 3 4>;
-            require-prior-idle-ms = <150>;
+            key-positions = <2 12>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(R)>;
         };
 
