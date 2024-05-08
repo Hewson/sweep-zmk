@@ -173,7 +173,7 @@
 //close tab
         combo_cmdW {
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <21 12 13>;
+            key-positions = <2 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(W)>;
         };
@@ -243,7 +243,7 @@
 
         };
 
-//comma
+//cmd comma
         combo_cmdComma {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <5 15>;
@@ -309,8 +309,8 @@
 
 //refresh
         combo_cmdR {
-            timeout-ms = <COMBO_NORMAL>;
-            key-positions = <2 12>;
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <1 11>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(R)>;
         };
@@ -319,7 +319,7 @@
         combo_bullets {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <6 16>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(LS(N8))>;
         };
 
