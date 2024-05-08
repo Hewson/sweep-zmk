@@ -253,7 +253,7 @@
         };
 
 //undo right
-        combo_undo {
+        combo_undo_right {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <7 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
@@ -261,7 +261,7 @@
         };
 
 //undo left
-        combo_undo {
+        combo_undo_left {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <20 21>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
