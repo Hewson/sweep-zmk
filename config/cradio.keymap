@@ -46,6 +46,7 @@
 #define MIN &kp LG(M)
 #define LOCK &kp LC(LG(Q))
 #define SK_HYPER &sk LS(LG(LC(LALT)))
+#define HYPERK &kp LS(LG(LC(LALT)))
 
 #define XXX &none
 #define ___ &trans
@@ -384,7 +385,7 @@
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <100>;         // requires PR #1387
+            require-prior-idle-ms = <50>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
@@ -396,7 +397,7 @@
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick_tap_ms = <175>;
-            require-prior-idle-ms = <100>;         // requires PR #1387
+            require-prior-idle-ms = <50>;         // requires PR #1387
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;             // requires PR #1423
         };
@@ -448,7 +449,7 @@
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    &hl_l 4 Q &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                &sk LSHIFT   SK_HYPER                  &as RGUI BSPC   &gqt_l 2 SPACE       
+                                &sk LSHIFT   HYPERK                   &as RGUI BSPC   &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
