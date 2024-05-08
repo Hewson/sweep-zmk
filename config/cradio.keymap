@@ -252,13 +252,22 @@
             bindings = <&kp LG(COMMA)>;
         };
 
-//undo
+//undo right
         combo_undo {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <7 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(Z)>;
         };
+
+//undo left
+        combo_undo {
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <20 21>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp LG(Z)>;
+        };
+
 
 //copy
         combo_copy {
