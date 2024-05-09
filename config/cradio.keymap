@@ -106,18 +106,18 @@
     combos {
         compatible = "zmk,combos";
 
-//autobracket        
+//auto bracket        
         combo_brackets { 
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <26 27>;
+            key-positions = <17 27>;
             require-prior-idle-ms = <50>;
             bindings = <&auto_brackets>;
         };
 
 //delword
         combo_del_word {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <16 27>;
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <15 16>;
             require-prior-idle-ms = <50>;
             bindings = <DELWORD>;
         };
@@ -125,7 +125,7 @@
 //select all
         combo_selall {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <10 14>;
+            key-positions = <13 14>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(A)>;
         };
@@ -133,8 +133,8 @@
 //select line
         combo_sel_line { 
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <17 28>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            key-positions = <8 18>;
+            require-prior-idle-ms = <150>;
             bindings = <&sel_line>;
         };
 
@@ -252,7 +252,7 @@
             bindings = <&kp LG(COMMA)>;
         };
 
-//undo right
+//undo - right
         combo_undo_right {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <7 17>;
@@ -260,7 +260,7 @@
             bindings = <&kp LG(Z)>;
         };
 
-//undo left
+//undo - left
         combo_undo_left {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <20 21>;
@@ -268,6 +268,13 @@
             bindings = <&kp LG(Z)>;
         };
 
+//repeat key
+        combo_repeat {
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <12 22>;
+            require-prior-idle-ms = <50>;
+            bindings = <&key_repeat>;
+        };
 
 //copy
         combo_copy {
@@ -458,7 +465,7 @@
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    &hl_l 4 Q &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                &sk LSHIFT   HYPERK                   &as RGUI BSPC   &gqt_l 2 SPACE       
+                                 &sk LSHIFT   HYPERK                   &as RGUI BSPC   &gqt_l 2 SPACE       
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
