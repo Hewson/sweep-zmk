@@ -196,7 +196,7 @@
 
 //hypen
         combo_hyphen {
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17 18 19>;
             require-prior-idle-ms = <20>;
             bindings = <&kp MINUS>;
