@@ -122,6 +122,14 @@
             bindings = <DELWORD>;
         };
 
+//hyper thumbs
+        combo_hyper_thumbs {
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <30 33>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <HYPERK>;
+        };
+
 //select all
         combo_selall {
             timeout-ms = <COMBO_FAST>;
