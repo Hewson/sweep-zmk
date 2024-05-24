@@ -130,14 +130,6 @@
             bindings = <&kp LG(A)>;
         };
 
-//select line
-        combo_sel_line { 
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <27 28>;
-            require-prior-idle-ms = <150>;
-            bindings = <&sel_line>;
-        };
-
 //cmd k
         combo_cmdK { 
             timeout-ms = <COMBO_FAST>;
@@ -146,12 +138,12 @@
             bindings = <&kp LG(K)>;
         };
 
-//esc left
-        combo_esc_left {
+//select line
+        combo_sel_line { 
             timeout-ms = <COMBO_FAST>;
             key-positions = <13 23>;
             require-prior-idle-ms = <150>;
-            bindings = <&kp ESC>;
+            bindings = <&sel_line>;
         };
 
 //esc right
@@ -458,13 +450,13 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &kp W     &kp L    &kp Y    &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
+   &kp W      &kp L     &kp Y   &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C     &hl_l 3 R &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
+   HYPER_C    &hl_l 3 R &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
+   &hl_l 4 Q  &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    &sk LSHIFT &kp DEL                    &as RGUI BSPC &gqt_l 2 SPACE     
+                                    &sk LSHIFT &kp ESC                    &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
