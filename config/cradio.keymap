@@ -101,6 +101,16 @@
                 , <&kp LG(LS(LEFT))>
                 ;
         };
+        sel_word: sel_word {
+            label = "sel_word";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LA(RIGHT)>
+                , <&kp LA(LS(LEFT))>
+                ;
+        };
+
     };
 
     combos {
@@ -456,7 +466,7 @@
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    &hl_l 4 Q  &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    &sk LSHIFT &kp ESC                    &as RGUI BSPC &gqt_l 2 SPACE     
+                                    &sk LSHIFT &sel_word                  &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
