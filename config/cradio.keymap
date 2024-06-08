@@ -134,72 +134,72 @@
                 = <&kp N1>
                 ;
         };
-        2_stop: 2_stop {
-            label = "1_stop";
+        two_stop: two_stop {
+            label = "two_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N2>
                 ;
         };
-        3_stop: 3_stop {
-            label = "3_stop";
+        three_stop: three_stop {
+            label = "three_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N3>
                 ;
         };
-        4_stop: 4_stop {
-            label = "4_stop";
+        four_stop: four_stop {
+            label = "four_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N4>
                 ;
         };
-        5_stop: 5_stop {
-            label = "5_stop";
+        five_stop: five_stop {
+            label = "five_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N5>
                 ;
         };
-        6_stop: 6_stop {
-            label = "6_stop";
+        six_stop: six_stop {
+            label = "six_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N6>
                 ;
         };
-        7_stop: 7_stop {
-            label = "7_stop";
+        sev_stop: sev_stop {
+            label = "sev_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N7>
                 ;
         };
-        8_stop: 8_stop {
-            label = "8_stop";
+        eig_stop: eig_stop {
+            label = "eig_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N8>
                 ;
         };
-        9_stop: 9_stop {
-            label = "9_stop";
+        nine_stop: nine_stop {
+            label = "nine_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&kp N9>
                 ;
         };
-        0_stop: 0_stop {
-            label = "0_stop";
+        zero_stop: zero_stop {
+            label = "zero_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -573,7 +573,7 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &ht 1_stop W  &ht 2_stop L  &ht 3_stop Y &ht 4_stop P   &ht 5_stop B       &ht 6_stop Z &ht 7_stop F &ht 8_stop O    &ht 9_stop U &ht 0_stop SEMI      
+&ht one_stop W &ht two_stop L &ht three_stop Y &ht four_stop P &ht five_stop B  &ht six_stop Z &ht sev_stop F &ht eig_stop O &ht nine_stop U &ht zero_stop SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
