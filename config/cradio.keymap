@@ -126,8 +126,8 @@
                 = <&kp LG(K)>
                 ;
         };
-        1_stop: 1_stop {
-            label = "1_stop";
+        one_stop: one_stop {
+            label = "one_stop";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
