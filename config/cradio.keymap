@@ -110,22 +110,6 @@
                 = <&kp LA(LS(LEFT))>
                 ;
         };
-        question_stop: question_stop {
-            label = "question_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LS(FSLH)>
-                ;
-        };
-        cmdk_stop: cmdk_stop {
-            label = "cmdk_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LG(K)>
-                ;
-        };
         
         tap: tap {
             compatible = "zmk,behavior-macro-one-param";
@@ -494,7 +478,7 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &ht N1 W &ht N2 L &ht N3 Y &ht N4 P &ht N5 B                                &ht N6 Z &ht N7 F &ht N8 O &ht N9 U &ht N0 SEMI      
+   &ht N1 W  &ht N2 L  &ht N3 Y &ht N4 P   &ht N5 B                            &ht N6 Z &ht N7 F  &ht N8 O     &ht N9 U   &ht N0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
