@@ -135,95 +135,6 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
 
-        one_stop: one_stop {
-            label = "one_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N1>
-                ;
-        };
-        two_stop: two_stop {
-            label = "two_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N2>
-                ;
-        };
-        three_stop: three_stop {
-            label = "three_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N3>
-                ;
-        };
-        four_stop: four_stop {
-            label = "four_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N4>
-                ;
-        };
-        five_stop: five_stop {
-            label = "five_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N5>
-                ;
-        };
-        six_stop: six_stop {
-            label = "six_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N6>
-                ;
-        };
-        sev_stop: sev_stop {
-            label = "sev_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N7>
-                ;
-        };
-        eig_stop: eig_stop {
-            label = "eig_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N8>
-                ;
-        };
-        nine_stop: nine_stop {
-            label = "nine_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N9>
-                ;
-        };
-        zero_stop: zero_stop {
-            label = "zero_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp N0>
-                ;
-        };
-        esc_stop: esc_stop {
-            label = "esc_stop";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp ESC>
-                ;
-        };
-
     };
 
     combos {
@@ -275,7 +186,8 @@
         timeout-ms = <COMBO_FAST>;
             key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp ESC>;
+            bindings = <&ht RAYCAST ESC>;
+            //bindings = <&kp ESC>;
         };
 
 //raycast
