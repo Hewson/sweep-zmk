@@ -170,7 +170,7 @@
         timeout-ms = <COMBO_FAST>;
             key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&ht RAYCAST ESC>;
+            bindings = <&ht LS(LG(LC(LA(A)))) ESC>;
             //bindings = <&kp ESC>;
         };
 
