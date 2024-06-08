@@ -161,7 +161,7 @@
             timeout-ms = <COMBO_FAST>;
             key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&ht ESC CMD(K)>;
+            bindings = <&ht ESC CMD_K>;
             //bindings = <&kp ESC>;
         };
 
