@@ -118,6 +118,102 @@
                 = <&kp LS(FSLH)>
                 ;
         };
+        cmdk_stop: cmdk_stop {
+            label = "cmdk_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LG(K)>
+                ;
+        };
+        1_stop: 1_stop {
+            label = "1_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N1>
+                ;
+        };
+        2_stop: 2_stop {
+            label = "1_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N2>
+                ;
+        };
+        3_stop: 3_stop {
+            label = "3_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N3>
+                ;
+        };
+        4_stop: 4_stop {
+            label = "4_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N4>
+                ;
+        };
+        5_stop: 5_stop {
+            label = "5_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N5>
+                ;
+        };
+        6_stop: 6_stop {
+            label = "6_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N6>
+                ;
+        };
+        7_stop: 7_stop {
+            label = "7_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N7>
+                ;
+        };
+        8_stop: 8_stop {
+            label = "8_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N8>
+                ;
+        };
+        9_stop: 9_stop {
+            label = "9_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N9>
+                ;
+        };
+        0_stop: 0_stop {
+            label = "0_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp N0>
+                ;
+        };
+        esc_stop: esc_stop {
+            label = "esc_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp ESC>
+                ;
+        };
 
     };
 
@@ -149,7 +245,7 @@
         };
 
 //cmd k
-        combo_esc_left {             
+        combo_cmdK {             
             timeout-ms = <COMBO_FAST>;
             key-positions = <3 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
@@ -157,11 +253,11 @@
         };
 
 //esc left
-        combo_cmdK { 
+        combo_esc_left { 
             timeout-ms = <COMBO_FAST>;
             key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&ht ESC CMD_K>;
+            bindings = <&ht CMD_K &esc_stop>;
             //bindings = <&kp ESC>;
         };
 
@@ -477,7 +573,7 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &ht W N1  &ht L N2  &ht Y N3 &ht P N4   &ht B N5                            &ht Z N6 &ht F N7  &ht O N8     &ht U N9   &ht SEMI N0      
+   &ht 1_stop W  &ht 2_stop L  &ht 3_stop Y &ht 4_stop P   &ht 5_stop B       &ht 6_stop Z &ht 7_stop F &ht 8_stop O    &ht 9_stop U &ht 0_stop SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
