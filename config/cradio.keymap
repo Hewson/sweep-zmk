@@ -159,18 +159,27 @@
 //select all
         combo_selall {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <13 14>;
+            key-positions = <3 13>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(A)>;
         };
 
-//cmd k
-        combo_cmdK {             
+//select line
+        combo_selline {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <3 13>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp LG(K)>;
+            key-positions = <6 16>;
+            require-prior-idle-ms = <150>;
+            bindings = <&sel_line>;
         };
+
+
+//cmd k
+//        combo_cmdK {             
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <3 13>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <&kp LG(K)>;
+//        };
 
 //esc left
         combo_esc_left { 
@@ -191,12 +200,12 @@
         };
 
 //raycast
-        combo_esc_right {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <6 16>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <RAYCAST>;
-        };
+//        combo_esc_right {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <6 16>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <RAYCAST>;
+//        };
 
 //close tab
         combo_cmdW {
