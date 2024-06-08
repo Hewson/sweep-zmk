@@ -119,11 +119,19 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
 
-        email: email {
+        emailp: emailp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp H &kp E &kp W &kp S &kp O &kp N &kp DOT &kp T &kp R &kp A &kp N &kp LS(N2) &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>
+                ;
+        };
+
+        emailw: emailw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp H &kp E &kp W &kp S &kp O &kp N &kp DOT &kp T &kp R &kp A &kp N &kp LS(N2) &kp S &kp C &kp A &kp L &kp E &kp DOT &kp C &kp O &kp M>
                 ;
         };
 
@@ -211,7 +219,7 @@
             timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17 18>;
             require-prior-idle-ms = <20>;
-            bindings = <&kp SQT>;
+            bindings = <&emw 0 SQT>;
         };
 
 //hypen
@@ -227,8 +235,7 @@
             timeout-ms = <COMBO_SLOW>;
             key-positions = <11 12 13>;
             require-prior-idle-ms = <20>;
-            bindings = <&em 0 LS(N2)>;
-            //bindings = <&kp LS(N2)>;
+            bindings = <&emp 0 LS(N2)>;
         };
 
 //back
@@ -477,13 +484,21 @@
             flavor = "tap-preferred";
             bindings = <&tap>, <&kp>;
         };
-        em: em {
+        emp: emp {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping_term_ms = <400>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&email>, <&kp>;
+            bindings = <&emailp>, <&kp>;
+        };
+        emw: emw {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <400>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&emailw>, <&kp>;
         };
     };
 
