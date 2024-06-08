@@ -143,6 +143,14 @@
                 ;
         };
 
+        ttdate: ttdate {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp SEMI &kp U &kp F >
+                ;
+        };
+
         emdash: emdash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -534,6 +542,15 @@
             bindings = <&tdate>, <&kp>;
         };
 
+        ttd: ttd {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <400>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&ttdate>, <&kp>;
+        };
+
         ed: ed {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -554,9 +571,9 @@
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
    &ht N1 W  &ht N2 L  &ht N3 Y &ht N4 P   &ht N5 B                            &ht N6 Z &ht N7 F  &ht N8 O     &ht N9 U   &ht N0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &hl_l 3 R &td 0 S  &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &ht LS(N1) E &ed 0 I    HYPER_A       
+   HYPER_C   &hl_l 3 R &td 0 S  &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &ht LS(N1) E &ttd 0 I    HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q &kp J     &kp V    &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS_FSLH   
+   &hl_l 4 Q &kp J     &kp V    &ht RET D      &kp K                               &kp X    &ed 0 H     AS(COMMA)  AS(DOT)    AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT &sel_word                  &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
