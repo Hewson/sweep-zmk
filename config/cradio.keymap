@@ -51,8 +51,7 @@
 #define XXX &none
 #define ___ &trans
 #define AS(keycode) &as LS(keycode) keycode
-#define AS(keycode) &as LS(keycode) keycode
-#define AS_FSLH &as &question_stop FSLH
+#define AS_FSLH &ht LS(FSLH) FSLH
 
 &lt {  // layer-tap config
     flavor = "tap-preferred";
@@ -267,7 +266,7 @@
             timeout-ms = <COMBO_FAST>;
             key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&ht CMD_K &esc_stop>;
+            bindings = <&ht LG(K) ESC>;
             //bindings = <&kp ESC>;
         };
 
