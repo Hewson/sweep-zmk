@@ -51,6 +51,7 @@
 #define XXX &none
 #define ___ &trans
 #define AS(keycode) &as LS(keycode) keycode
+#define AS_FSLH &as &question_stop FSLH
 
 &lt {  // layer-tap config
     flavor = "tap-preferred";
@@ -109,6 +110,14 @@
                 = <&kp LA(LS(LEFT))>
                 ;
         };
+        question_stop: question_stop {
+            label = "question_stop";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LS(FLSH)>
+                ;
+        };
 
     };
 
@@ -152,7 +161,8 @@
             timeout-ms = <COMBO_FAST>;
             key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp ESC>;
+            bindings = <&ht ESC CMD(K)>;
+            //bindings = <&kp ESC>;
         };
 
 //esc right
@@ -449,6 +459,14 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <400>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
         keymap {
@@ -459,11 +477,11 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &kp W      &kp L     &kp Y   &kp P      &kp B                               &kp Z    &kp F     &kp O        &kp U      AS (SEMI)      
+   &ht W N1  &ht L N2  &ht Y N3 &ht P N4   &ht B N5                            &ht Z N6 &ht F N7  &ht O N8     &ht U N9   &ht SEMI N0      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C    &hl_l 3 R &kp S   &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
+   HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q  &kp J     &kp V   &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS(FSLH)   
+   &hl_l 4 Q &kp J     &kp V    &kp D      &kp K                               &kp X    &kp H     AS(COMMA)    AS(DOT)    AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT &sel_word                  &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
