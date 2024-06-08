@@ -573,7 +573,7 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-&ht one_stop W &ht two_stop L &ht three_stop Y &ht four_stop P &ht five_stop B  &ht six_stop Z &ht sev_stop F &ht eig_stop O &ht nine_stop U &ht zero_stop SEMI      
+&ht &one_stop W &ht &two_stop L &ht &three_stop Y &ht &four_stop P &ht &five_stop B  &ht &six_stop Z &ht &sev_stop F &ht &eig_stop O &ht &nine_stop U &ht &zero_stop SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
    HYPER_C   &hl_l 3 R &kp S    &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &kp E        &kp I      HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
