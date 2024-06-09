@@ -570,13 +570,13 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &ht N1 W    &ht N2 L    &ht N3 Y     &ht N4 P  &ht N5 B                    &ht N6 Z &ht N7 F  &ht N8 O      &ht N9 U    &ht N0 SEMI      
+   &ht N1 W    &ht N2 L  &ht N3 Y     &ht N4 P    &ht N5 B                    &ht N6 Z &ht N7 F  &ht N8 O      &ht N9 U    &ht N0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C     &hl_l 3 R   &ht LS(N2) S &hl_l 1 T &ht LS(N8) G                &ed 0 M  &hl_r 5 N &ht LS(N1) E  &ht MINUS I HYPER_A       
+   HYPER_C     &hl_l 3 R &ht LS(N2) S &hl_l 1 T   &ht LS(N8) G                &ed 0 M  &hl_r 5 N &ht LS(N1) E  &ht MINUS I HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &ht LG(Z) Q &ht LG(C) J &ht LG(V) V  &emp 0 D  &hl_l 4 K                   &kp X    &emw 0 H  &td 0 COMMA   &ttd 0 DOT  AS_FSLH   
+   &ht LG(Z) Q &emp 0 J  &ht LG(C) V  &ht LG(V) D &hl_l 4 K                   &kp X    &ttd 0 H  &td 0 COMMA   &emw 0 DOT  AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    &sk LSHIFT &sel_word                  &as RGUI BSPC &gqt_l 2 SPACE     
+                                    &sk LSHIFT &kp C_PP                  &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
@@ -654,11 +654,11 @@
 // layer 5 - right index
 
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   XXX      &kp LS(N3) &kp LS(N7) XXX            XXX                       XXX      XXX      XXX      XXX      XXX        
+   XXX        XXX        XXX        XXX          XXX                       XXX      XXX      XXX      XXX      XXX        
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-&kp LS(N1)  &kp LS(N5) &kp LS(N4) &kp LS(N8)     XXX                       XXX      XXX      XXX      XXX      XXX        
+   &kp LS(N3) &kp LS(N5) &kp LS(N7) &kp LS(N4)   XXX                       XXX      XXX      XXX      XXX      XXX        
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
-   XXX      XXX        XXX        XXX            XXX                       XXX      XXX      XXX      XXX      XXX        
+   XXX        XXX        XXX        XXX          XXX                       XXX      XXX      XXX      XXX      XXX        
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
                                     ___       ___                        ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
