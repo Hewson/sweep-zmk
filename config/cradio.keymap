@@ -570,11 +570,11 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-&emp 0 W     &ht LS(N3) L  &ht LS(N7) Y   &kp P        &kp B                  &kp Z     &kp F        &LS(N4) O     &ht LS(N5) U   &emw 0 SEMI      
+&emp 0 W     &ht LS(N3) L  &ht LS(N7) Y   &kp P        &kp B                  &kp Z     &kp F        &ht LS(N4) O &ht LS(N5) U  &emw 0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-HYPER_C      &hl_l 3 R     &ht LS(N2) S   &hl_l 1 T    &kp G                  &ed 0 M   &ht LS(N1) N &ht MINUS E   &ht LS(N8) I   HYPER_A       
+HYPER_C      &hl_l 3 R     &ht LS(N2) S   &hl_l 1 T    &kp G                  &ed 0 M   &ht LS(N1) N &ht MINUS E  &ht LS(N8) I  HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-&ht LG(Z) Q  &kp J         &ht LG(C) V    &ht LG(V) D  &hl_l 4 K              &kp X     &ttd 0 H     &td 0 COMMA   &kp DOT        AS_FSLH   
+&ht LG(Z) Q  &kp J         &ht LG(C) V    &ht LG(V) D  &hl_l 4 K              &kp X     &ttd 0 H     &td 0 COMMA  &kp DOT       AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT  &kp C_PP                   &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
