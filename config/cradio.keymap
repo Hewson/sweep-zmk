@@ -251,23 +251,32 @@
             timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17 18>;
             require-prior-idle-ms = <20>;
-            bindings = <&emw 0 SQT>;
+            bindings = <&kp SQT>;
+            //bindings = <&emw 0 SQT>;
         };
 
 //hypen
-        combo_hyphen {
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <16 17 18 19>;
-            require-prior-idle-ms = <20>;
-            bindings = <&kp MINUS>;
-        };
+//        combo_hyphen {
+//            timeout-ms = <COMBO_SLOW>;
+//            key-positions = <16 17 18 19>;
+//            require-prior-idle-ms = <20>;
+//            bindings = <&kp MINUS>;
+//        };
 
 //at symbol
+//        combo_at_symbol {
+//            timeout-ms = <COMBO_SLOW>;
+//            key-positions = <11 12 13>;
+//            require-prior-idle-ms = <20>;
+//            bindings = <&emp 0 LS(N2)>;
+//        };
+
+//copy paste w 3 finger left
         combo_at_symbol {
             timeout-ms = <COMBO_SLOW>;
             key-positions = <11 12 13>;
             require-prior-idle-ms = <20>;
-            bindings = <&emp 0 LS(N2)>;
+            bindings = <&ht LG(V) LG(C)>;
         };
 
 //back
@@ -571,9 +580,9 @@
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
    &ht N1 W  &ht N2 L  &ht N3 Y     &ht N4 P     &ht N5 B                     &ht N6 Z &ht N7 F  &ht N8 O      &ht N9 U    &ht N0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &hl_l 3 R &ht LS(N2) S &hl_l 1 T    &kp G                        &ed 0 M  &hl_r 5 N &ht LS(N1) E  &ht MINUS I HYPER_A       
+   HYPER_C   &hl_l 3 R &ht LS(N2) S &hl_l 1 T    &emp 0 G                     &ed 0 M  &hl_r 5 N &ht LS(N1) E  &ht MINUS I HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q &ttd 0 J  &td 0 V      &ht LS(N8) D &kp K                        &kp X    &ht SQT H AS(COMMA)     AS(DOT)     AS_FSLH   
+   &hl_l 4 Q &ttd 0 J  &td 0 V      &ht LS(N8) D &kp K                        &kp X    &emw 0 H  AS(COMMA)     AS(DOT)     AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT &sel_word                  &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
