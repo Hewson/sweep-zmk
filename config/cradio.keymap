@@ -504,8 +504,8 @@
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <175>;
-            bindings = <&sk LSHIFT>, <&kp C_PP>;
+            tapping-term-ms = <250>;
+            bindings = <&sk LSHIFT>, <&kp LG(K)>;
         };
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
@@ -582,8 +582,7 @@ HYPER_C      &hl_l 3 R     &ht LS(N2) S   &hl_l 1 T    &kp G                  &e
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
 &ht LG(Z) Q  &kp J         &ht LG(C) V    &ht LG(V) D  &hl_l 4 K              &kp X     &ttd 0 H     &td 0 COMMA  &kp DOT       AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
-                                    &td0  &kp C_PP               &as RGUI BSPC &gqt_l 2 SPACE     
-                                    //&sk LSHIFT  &kp C_PP                   &as RGUI BSPC &gqt_l 2 SPACE     
+                                    &td0     &kp C_PP                    &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
