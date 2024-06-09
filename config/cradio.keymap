@@ -2,7 +2,7 @@
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
- */
+ */z?aaaaaaaaaaaaaaaaaaaaaaaaa? 
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -569,11 +569,11 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &ht N1 W  &ht N2 L  &ht N3 Y &ht N4 P   &ht N5 B                            &ht N6 Z &ht N7 F  &ht N8 O     &ht N9 U   &ht N0 SEMI      
+   &ht N1 W  &ht N2 L  &ht N3 Y     &ht N4 P     &ht N5 B                     &ht N6 Z &ht N7 F  &ht N8 O      &ht N9 U    &ht N0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &hl_l 3 R &td 0 S  &hl_l 1 T  &kp G                               &kp M    &hl_r 5 N &ht LS(N1) E &ttd 0 I   HYPER_A       
+   HYPER_C   &hl_l 3 R &ht LS(N2) S &hl_l 1 T    &kp G                        &ed 0 M  &hl_r 5 N &ht LS(N1) E  &ht MINUS I HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q &kp J     &kp V    &ht RET D  &kp K                               &kp X    &ed 0 H     AS(COMMA)  AS(DOT)    AS_FSLH   
+   &hl_l 4 Q &ttd 0 J  &td 0 V      &ht LS(N8) D &kp K                        &kp X    &hp SQT H AS(COMMA)     AS(DOT)     AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT &sel_word                  &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
@@ -643,7 +643,7 @@
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    XXX      XXX      XXX      XXX      XXX                                 XXX      XXX      XXX      XXX      XXX        
 //└────────┴────────┴───┬────┴───┬────┴───┬────┘                          └───┬────┴───┬────┴────────┴────────┴────────┘
-                                    ___       ___                        ___      ___      
+                                    ___       ___                       ___      ___      
                                 // └────────┴────────┘                 └────────┴────────┘
                         >;
                 };
