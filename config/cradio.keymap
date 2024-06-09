@@ -271,14 +271,6 @@
 //            bindings = <&emp 0 LS(N2)>;
 //        };
 
-//copy paste w 3 finger left
-        combo_at_symbol {
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <11 12 13>;
-            require-prior-idle-ms = <20>;
-            bindings = <&ht LG(V) LG(C)>;
-        };
-
 //back
         combo_back {
             timeout-ms = <COMBO_FAST>;
@@ -419,7 +411,7 @@
 //copy link
         combo_copylink {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <12 13 14>;
+            key-positions = <11 12 13>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LS(LG(C))>;
         };
@@ -578,11 +570,11 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-   &ht N1 W  &ht N2 L  &ht N3 Y     &ht N4 P     &ht N5 B                     &ht N6 Z &ht N7 F  &ht N8 O      &ht N9 U    &ht N0 SEMI      
+   &ht N1 W    &ht N2 L    &ht N3 Y     &ht N4 P  &ht N5 B                    &ht N6 Z &ht N7 F  &ht N8 O      &ht N9 U    &ht N0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   HYPER_C   &hl_l 3 R &ht LS(N2) S &hl_l 1 T    &emp 0 G                     &ed 0 M  &hl_r 5 N &ht LS(N1) E  &ht MINUS I HYPER_A       
+   HYPER_C     &hl_l 3 R   &ht LS(N2) S &hl_l 1 T &ht LS(N8) G                &ed 0 M  &hl_r 5 N &ht LS(N1) E  &ht MINUS I HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-   &hl_l 4 Q &ttd 0 J  &td 0 V      &ht LS(N8) D &kp K                        &kp X    &emw 0 H  AS(COMMA)     AS(DOT)     AS_FSLH   
+   &ht LG(Z) Q &ht LG(C) J &ht LG(V) V  &emp 0 D  &hl_l 4 K                   &kp X    &emw 0 H  &td 0 COMMA   &ttd 0 DOT  AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &sk LSHIFT &sel_word                  &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
