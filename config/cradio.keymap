@@ -184,7 +184,7 @@
 //select all
         combo_selall {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <13 14>;
+            key-positions = <10 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(A)>;
         };
@@ -276,7 +276,7 @@
 //back
         combo_back {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <11 21>;
+            key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <BACK>;
         };
