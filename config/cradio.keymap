@@ -172,16 +172,10 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp RGUI>;
-                //, <&macro_pause_for_release>
-                //, <&macro_release &kp RGUI>
-                //;
+                , <&macro_pause_for_release>
+                , <&macro_release &kp RGUI>
+                ;
         };
-
-        bindings
-        = <&macro_press &mo 1 &kp LSHFT>
-        , <&macro_pause_for_release>
-        , <&macro_release &mo 1 &kp LSHFT>
-        ;
 
     };
 
