@@ -159,18 +159,19 @@
                 = <&macro_tap &kp LS(LA(MINUS)) >
                 ;
         };
+
     };
 
     combos {
         compatible = "zmk,combos";
 
 //auto bracket        
-        combo_brackets { 
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <17 27>;
-            require-prior-idle-ms = <50>;
-            bindings = <&auto_brackets>;
-        };
+//        combo_brackets { 
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <17 27>;
+//            require-prior-idle-ms = <50>;
+//            bindings = <&auto_brackets>;
+//        };
 
 //delword
         combo_del_word {
@@ -224,12 +225,12 @@
         };
 
 //raycast
-        combo_esc_right {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <7 17>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <RAYCAST>;
-        };
+//        combo_esc_right {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <7 17>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <RAYCAST>;
+//        };
 
 //close tab
         combo_cmdW {
@@ -573,6 +574,15 @@
             flavor = "tap-preferred";
             bindings = <&emdash>, <&kp>;
         };
+        ab: ab {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <HOLD_TIME>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&auto_brackets>, <&kp>;
+        };    
+        
     };
 
         keymap {
@@ -583,11 +593,11 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-&emp 0 W     &ht LS(N3) L  &ht LS(N7) Y   &ht F19 P    &kp B                  &kp Z   &ht LS(N4) F            &ed 0 O     &ht LS(N5) U &emw 0 SEMI      
+&emp 0 W     &ht LS(N3) L  &ht LS(N7) Y   &ab 0 P     &kp B                  &kp Z   &ht LS(N4) F            &ed 0 O     &ht LS(N5) U &emw 0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-HYPER_C      &hl_l 3 R     &ht LS(N2) S   &hl_l 1 T    &kp G                  &kp M   &ht LS(N1) N            &ht MINUS E &ht LS(N8) I HYPER_A       
+HYPER_C      &hl_l 3 R     &ht LS(N2) S   &hl_l 1 T   &kp G                  &kp M   &ht LS(N1) N            &ht MINUS E &ht LS(N8) I HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-&ht LG(Z) Q  &kp J         &ht LG(C) V    &ht LG(V) D  &hl_l 4 K              &kp X   &ht LS(LG(LC(LA(A)))) H &td 0 COMMA &ttd 0 DOT   AS_FSLH   
+&ht LG(Z) Q  &kp J         &ht LG(C) V    &ht LG(V) D &hl_l 4 K              &kp X   &ht LS(LG(LC(LA(A)))) H &td 0 COMMA &ttd 0 DOT   AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘  
                                     &td0     &td1                         &as RGUI BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
