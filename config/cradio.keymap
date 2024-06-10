@@ -20,6 +20,7 @@
 #define COMBO_FAST 20
 #define COMBO_NORMAL 30
 #define COMBO_SLOW 45
+#define HOLD_TIME 300
 
 #define DEFAULT 0
 #define LOWER   1
@@ -516,7 +517,7 @@
         as: auto_shift {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -524,7 +525,7 @@
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&tap>, <&kp>;
@@ -532,7 +533,7 @@
         emp: emp {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&emailp>, <&kp>;
@@ -540,7 +541,7 @@
         emw: emw {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&emailw>, <&kp>;
@@ -549,7 +550,7 @@
         td: td {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&tdate>, <&kp>;
@@ -558,7 +559,7 @@
         ttd: ttd {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&ttdate>, <&kp>;
@@ -567,7 +568,7 @@
         ed: ed {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping_term_ms = <400>;
+            tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&emdash>, <&kp>;
