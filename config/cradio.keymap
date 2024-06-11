@@ -217,7 +217,7 @@
 
 //cmd k
         combo_cmdK {             
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
@@ -225,8 +225,8 @@
 
 //esc left
         combo_esc_left { 
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <10 13>;
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             //bindings = <&ht LG(K) ESC>;
             bindings = <&kp ESC>;
@@ -234,8 +234,8 @@
 
 //esc right
         combo_raycast {
-        timeout-ms = <COMBO_SLOW>;
-            key-positions = <16 19>;
+        timeout-ms = <COMBO_NORMAL>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             //bindings = <&ht LS(LG(LC(LA(A)))) ESC>;
             bindings = <&kp ESC>;
@@ -243,7 +243,7 @@
 
 //raycast
         combo_esc_right {
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <17 18>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <RAYCAST>;
