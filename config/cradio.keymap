@@ -201,7 +201,7 @@
 //select all
         combo_selall {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <10 13>;
+            key-positions = <20 23>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(A)>;
         };
@@ -216,17 +216,17 @@
 
 
 //cmd k
-//        combo_cmdK {             
-//            timeout-ms = <COMBO_FAST>;
-//            key-positions = <2 12>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <&kp LG(K)>;
-//        };
+        combo_cmdK {             
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <11 12>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp LG(K)>;
+        };
 
 //esc left
         combo_esc_left { 
             timeout-ms = <COMBO_FAST>;
-            key-positions = <12 13>;
+            key-positions = <10 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             //bindings = <&ht LG(K) ESC>;
             bindings = <&kp ESC>;
@@ -235,19 +235,19 @@
 //esc right
         combo_raycast {
         timeout-ms = <COMBO_FAST>;
-            key-positions = <16 17>;
+            key-positions = <16 19>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             //bindings = <&ht LS(LG(LC(LA(A)))) ESC>;
             bindings = <&kp ESC>;
         };
 
 //raycast
-//        combo_esc_right {
-//            timeout-ms = <COMBO_FAST>;
-//            key-positions = <7 17>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <RAYCAST>;
-//        };
+        combo_esc_right {
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <17 18>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <RAYCAST>;
+        };
 
 //close tab
         combo_cmdW {
@@ -293,7 +293,7 @@
 //back
         combo_back {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <11 12>;
+            key-positions = <3 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <BACK>;
         };
@@ -629,13 +629,13 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-&emp 0 W     &ht LS(N3) L  &ht LS(N7) Y   &ab 0 P     &kp B                  &kp Z   &ht LS(N4) F            &ed 0 O     &ht LS(N5) U &emw 0 SEMI      
+&emp 0 W     &ht LS(N3) L  &ht LS(N7) Y   &ab 0 P     &kp B                   &kp Z    &ht LS(N4) F  &ed 0 O      &ht LS(N5) U  &emw 0 SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-HYPER_C      &hl_l 3 R     &ht LS(N2) S   &hl_l 1 T   &kp G                  &ra 0 M   &ht LS(N1) N            &ht MINUS E &ht LS(N8) I HYPER_A       
+HYPER_C      &hl_l 3 R     &ht LS(N2) S   &hl_l 1 T   &kp G                   &ra 0 M  &ht LS(N1) N  &ht MINUS E  &ht LS(N8) I  HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-&ht LG(Z) Q  &kp J         &ht LG(C) V    &ht LG(V) D &hl_l 4 K              &kp X   &ht LS(LG(LC(LA(A)))) H &td 0 COMMA &ttd 0 DOT   AS_FSLH   
+&ht LG(Z) Q  &kp J         &ht LG(C) V    &ht LG(V) D &hl_l 4 K               &kp X    &ht C_NEXT H  &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘   
-                                    &td0     &as RGUI C_PP                &ht C_NEXT BSPC &gqt_l 2 SPACE     
+                                    &sk LSHIFT  &as RGUI C_PP             &kp BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
