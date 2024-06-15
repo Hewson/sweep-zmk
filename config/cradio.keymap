@@ -44,15 +44,15 @@
 #define FORWARD &kp LG(RBKT)
 #define CMD_K &kp LG(K)
 #define CMD_W &kp LG(W)
-#define MIN &kp LG(M)
+#define MIN &kp LG(M) //minimize
 #define LOCK &kp LC(LG(Q))
 #define SK_HYPER &sk LS(LG(LC(LALT)))
-#define HYPERK &kp LS(LG(LC(LALT)))
-#define TTASK LS(LG(LC(LA(F))))
-#define BBIT LA(Z)
-#define CCLIP LS(LG(LC(LA(T))))
-#define GGL LS(LG(LC(LA(J))))
-#define GGPT LS(LG(LC(LA(M))))
+#define HYPERK &kp LS(LG(LC(LALT))) //hyper key
+#define TTASK LS(LG(LC(LA(F)))) //todoist task
+#define BBIT LA(Z) //bitwarden fill
+#define CCLIP LS(LG(LC(LA(T)))) //raycast clipboard
+#define GGL LS(LG(LC(LA(J)))) //raycast google
+#define GGPT LS(LG(LC(LA(M)))) //chat gpt search
 
 #define XXX &none
 #define ___ &trans
