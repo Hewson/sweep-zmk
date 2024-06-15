@@ -49,7 +49,7 @@
 #define SK_HYPER &sk LS(LG(LC(LALT)))
 #define HYPERK &kp LS(LG(LC(LALT)))
 #define TTASK LS(LG(LC(LA(F))))
-#define BBIT LS(LG(LA(Z)))
+#define BBIT LA(Z)
 #define CCLIP LS(LG(LC(LA(T))))
 #define GGL LS(LG(LC(LA(J))))
 #define GGPT LS(LG(LC(LA(M))))
