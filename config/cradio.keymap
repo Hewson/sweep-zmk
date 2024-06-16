@@ -48,7 +48,7 @@
 #define LOCK &kp LC(LG(Q))
 #define SK_HYPER &sk LS(LG(LC(LALT)))
 #define HYPERK &kp LS(LG(LC(LALT))) //hyper key
-#define TTASK LS(LG(LC(LA(F)))) //todoist task
+#define TTASK LS(LG(LC(LA(K)))) //todoist task
 #define BBIT LA(Z) //bitwarden fill
 #define CCLIP LS(LG(LC(LA(T)))) //raycast clipboard
 #define GGL LS(LG(LC(LA(J)))) //raycast google
