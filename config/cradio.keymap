@@ -248,18 +248,17 @@
         };
 
 //esc right
-        combo_raycast {
+        combo_esc_right {
+
         timeout-ms = <COMBO_NORMAL>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            //bindings = <&ht LS(LG(LC(LA(A)))) ESC>;
             bindings = <&kp ESC>;
         };
 
 //raycast
-        combo_esc_right {
+        combo_raycast {
             timeout-ms = <COMBO_NORMAL>;
-            //key-positions = <17 18>;
             key-positions = <11 12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <RAYCAST>;
