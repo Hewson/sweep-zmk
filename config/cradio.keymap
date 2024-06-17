@@ -233,7 +233,7 @@
 //cmd k
         combo_cmdK {             
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <11 12>;
+            key-positions = <11 12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -251,15 +251,23 @@
         combo_esc_right {
 
         timeout-ms = <COMBO_NORMAL>;
-            key-positions = <17 18>;
+            key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp ESC>;
+        };
+
+//f19
+        combo_f19 {
+        timeout-ms = <COMBO_NORMAL>;
+            key-positions = <17 18>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp F19>;
         };
 
 //raycast
         combo_raycast {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <11 12 13>;
+            key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <RAYCAST>;
         };
