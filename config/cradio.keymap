@@ -198,9 +198,13 @@
                 ;
         };
 
-
-
-
+        seall: seall {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LG(A)>
+                ;
+        };
     };
 
     combos {
@@ -668,6 +672,15 @@
             flavor = "tap-preferred";
             bindings = <&obs>, <&kp>;
         };
+
+        sal: sal {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <HOLD_TIME>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&seall>, <&kp>;
+        };
     };
 
         keymap {
@@ -678,9 +691,9 @@
 //canary
 
 //┌────────┬────────┬─────────┬──────────┬────────┐                          ┌────────┬─────────┬────────────┬──────────┬─────────┐
-&emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &emw 0 B                 &ht TTASK Z  &ht LS(N4) F  &ed 0 O      &ht LS(N5) U  &ht GGPT SEMI      
+&emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &emw 0 B                 &ht BBIT Z   &ht LS(N4) F  &ed 0 O      &ht LS(N5) U  &ht GGPT SEMI      
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &ht BBIT G               &ra 0 M      &ht LS(N1) N  &ab 0 E      &ht LS(N8) I  HYPER_A       
+HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G               &ra 0 M      &ht LS(N1) N  &ab 0 E      &ht LS(N8) I  HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K                &ob 0 X      &ht GGL H     &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘   
