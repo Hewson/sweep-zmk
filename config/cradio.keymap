@@ -267,6 +267,15 @@
             bindings = <&kp F19>;
         };
 
+//f18
+        combo_f19 {
+        timeout-ms = <COMBO_FAST>;
+            key-positions = <1 2>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp F18>;
+        };
+
+
 //raycast
         combo_raycast {
             timeout-ms = <COMBO_SLOW>;
