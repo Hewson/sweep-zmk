@@ -190,6 +190,15 @@
                 ;
         };
 
+        obs: obs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LS(LG(LC(LA(Z))))>
+                ;
+        };
+
+
 
 
     };
@@ -232,8 +241,8 @@
 
 //cmd k
         combo_cmdK {             
-            timeout-ms = <COMBO_NORMAL>;
-            key-positions = <11 12 13>;
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <11 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -258,8 +267,8 @@
 
 //f19
         combo_f19 {
-        timeout-ms = <COMBO_NORMAL>;
-            key-positions = <17 18>;
+        timeout-ms = <COMBO_SLOW>;
+            key-positions = <16 18>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp F19>;
         };
@@ -650,6 +659,15 @@
             flavor = "tap-preferred";
             bindings = <&cplink>, <&kp>;
         };
+
+        ob: ob {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <HOLD_TIME>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&obs>, <&kp>;
+        };
     };
 
         keymap {
@@ -664,9 +682,9 @@
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
 HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &ht BBIT G               &ra 0 M      &ht LS(N1) N  &ab 0 E      &ht LS(N8) I  HYPER_A       
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
-&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K                &kp X        &ht GGL H     &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
+&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K                &ob 0 X      &ht GGL H     &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘   
-                                    &sk LSHIFT  &as RGUI C_PP             &kp BSPC &gqt_l 2 SPACE     
+                                    &sk LSHIFT &as RGUI LG(K)             &kp BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
@@ -694,7 +712,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &ht BBIT G               &r
 // layer 2 - symbols and media - right thumb
   
 //┌────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┐
-   XXX      XXX      &kp LS(LBKT)  &kp LS(RBKT)  XXX                       &kp TILDE  XXX           &kp C_BRI_UP   XXX            XXX     
+   XXX      XXX      &kp LS(LBKT)  &kp LS(RBKT)  XXX                       &kp TILDE  &kp C_PP      &kp C_BRI_UP   XXX            XXX     
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
    XXX      XXX      &kp LS(N9)    &kp LS(N0)    XXX                       &kp BSLH   &kp C_VOL_DN  &kp C_BRI_DN   &kp C_VOL_UP   XXX
 //├────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┤
