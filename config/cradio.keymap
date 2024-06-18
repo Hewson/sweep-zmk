@@ -221,7 +221,7 @@
 //select all
         combo_selall {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <11 12>;
+            key-positions = <13 14>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(A)>;
         };
