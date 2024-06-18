@@ -145,7 +145,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp SEMI &kp O &kp F >
+                = <&macro_tap &kp SEMI &kp O &kp F>
                 ;
         };
 
@@ -153,15 +153,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp SEMI &kp U &kp F >
+                = <&macro_tap &kp SEMI &kp U &kp F>
                 ;
         };
 
-        emdash: emdash {
+        ddash: ddash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LS(LA(MINUS)) >
+                = <&macro_tap &kp MINUS>
                 ;
         };
         rarrow: rarrow {
@@ -242,7 +242,7 @@
 //cmd k
         combo_cmdK {             
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <11 13>;
+            key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
@@ -276,7 +276,7 @@
 //raycast
         combo_raycast {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <11 12>;
+            key-positions = <11 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <RAYCAST>;
         };
@@ -363,12 +363,12 @@
             bindings = <&kp LG(COMMA)>;
         };
 
-//undo - right
+//emdash
         combo_undo_right {
             timeout-ms = <COMBO_FAST>;
             key-positions = <7 17>;
             require-prior-idle-ms = <50>;
-            bindings = <&kp MINUS>;
+            bindings = <&kp LS(LA(MINUS))>;
         };
 
 //undo - left
@@ -623,7 +623,7 @@
             tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&emdash>, <&kp>;
+            bindings = <&ddash>, <&kp>;
         };
         ab: ab {
             compatible = "zmk,behavior-hold-tap";
@@ -684,7 +684,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &ht BBIT G               &r
 //├────────┼────────┼─────────┼──────────┼────────┤                          ├────────┼─────────┼────────────┼──────────┼─────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K                &ob 0 X      &ht GGL H     &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
 //└────────┴────────┴───┬─────┴────┬─────┴───┬────┘                          └───┬────┴───┬─────┴────────────┴──────────┴─────────┘   
-                                    &sk LSHIFT &as RGUI LG(K)             &kp BSPC &gqt_l 2 SPACE     
+                                    &sk LSHIFT &as RGUI C_PP              &kp BSPC &gqt_l 2 SPACE     
                                 // └────────┴────────┘                   └────────┴────────┘
 
                         >;
