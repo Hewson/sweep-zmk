@@ -33,7 +33,9 @@
 //shortcuts
 #define HYPER_A &gqt LS(LG(LC(LALT))) A
 #define HYPER_C &gqt LS(LG(LC(LALT))) C
-#define RAYCAST &kp LS(LG(LC(LA(A))))
+
+#define RAYCAST &kp LS(LG(LC(LA(SQT))))
+
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
 #define PLAINPASTE &kp LS(LA(LG(V))) 
@@ -47,13 +49,15 @@
 #define CMD_W &kp LG(W)
 #define MIN &kp LG(M) //minimize
 #define LOCK &kp LC(LG(Q))
-#define SK_HYPER &sk LS(LG(LC(LALT)))
 #define HYPERK &kp LS(LG(LC(LALT))) //hyper key
-#define TTASK LS(LG(LC(LA(K)))) //todoist task
 #define BBIT LA(Z) //bitwarden fill
-#define CCLIP LS(LG(LC(LA(T)))) //raycast clipboard
-#define GGL LS(LG(LC(LA(J)))) //raycast google
-#define GGPT LS(LG(LC(LA(M)))) //chat gpt search
+
+//hyper keys
+#define TTASK LS(LG(LC(LA(K)))) //todoist task
+
+#define CCLIP LS(LG(LC(LA(J)))) //raycast clipboard
+#define GGL LS(LG(LC(LA(H)))) //raycast google
+#define GGPT LS(LG(LC(LA(SEMI)))) //chat gpt search
 
 #define XXX &none
 #define ___ &trans
@@ -195,7 +199,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LS(LG(LC(LA(Z))))>
+                = <&macro_tap &kp LS(LG(LC(LA(X))))>
                 ;
         };
 
