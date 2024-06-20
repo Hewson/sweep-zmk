@@ -16,6 +16,7 @@
 
 #define HM_TAPPING_TERM 350
 #define COMBO_TAPPING_TERM 500
+#define HR_IDLE_TERM 75
 
 #define COMBO_FAST 20
 #define COMBO_NORMAL 30
@@ -462,8 +463,8 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <150>;         // requires PR #1387
+            quick-tap-ms = <175>;                     
+            require-prior-idle-ms = <HR_IDLE_TERM>;   
             bindings = <&kp>, <&kp>;
         };
         gqt_l: thumb_right_hold {
@@ -472,7 +473,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>; //updated from HM_TAPPING_TERM
-            require-prior-idle-ms = <15>;         // requires PR #1387
+            require-prior-idle-ms = <15>;         
             bindings = <&mo>, <&kp>;
         };
         hr_l: homerow_mods_left {
@@ -482,10 +483,10 @@
             bindings = <&kp>,  <&kp>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <100>;         // requires PR #1387
+            quick-tap-ms = <175>;               
+            require-prior-idle-ms = <HR_IDLE_TERM>; 
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
-            hold-trigger-on-release;             // requires PR #1423
+            hold-trigger-on-release;            
         };
         hr_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
@@ -495,9 +496,9 @@
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick_tap_ms = <175>;
-            require-prior-idle-ms = <100>;         // requires PR #1387
+            require-prior-idle-ms = <HR_IDLE_TERM>; 
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
-            hold-trigger-on-release;             // requires PR #1423
+            hold-trigger-on-release;           
         };
         hl_l: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
@@ -506,10 +507,10 @@
             bindings = <&mo>,  <&kp>;
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
-            quick-tap-ms = <175>;                // repeat on tap-into-hold
-            require-prior-idle-ms = <100>;         // requires PR #1387
+            quick-tap-ms = <175>;              
+            require-prior-idle-ms = <HR_IDLE_TERM>; 
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
-            hold-trigger-on-release;             // requires PR #1423
+            hold-trigger-on-release;            
         };
         hl_r: homerow_layers_right {
             compatible = "zmk,behavior-hold-tap";
@@ -519,9 +520,9 @@
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick_tap_ms = <175>;
-            require-prior-idle-ms = <100>;         // requires PR #1387
+            require-prior-idle-ms = <HR_IDLE_TERM>;   
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
-            hold-trigger-on-release;             // requires PR #1423
+            hold-trigger-on-release;            
         };
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
