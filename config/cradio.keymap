@@ -657,7 +657,7 @@ HYPER_C       &hl_l 3 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                 
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q   &ht CCLIP J   &ht LG(C) V   &ht LG(V) D  &hl_l 4 K                   &ob 0 X     &ht GGL H     &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &as RGUI C_PP                        &kp BSPC  &gqt_l 2 SPACE     
+                           &sk LSHIFT   &as RGUI RAYCAST                     &kp BSPC  &gqt_l 2 SPACE     
                        // └────────────┴─────────┘                          └─────────┴─────────┘
 
                         >;
