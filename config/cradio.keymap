@@ -226,12 +226,12 @@
             bindings = <&kp LG(A)>;
         };
 
-//select line
-        combo_selline {
+//play pause
+        combo_ppause {
             timeout-ms = <COMBO_FAST>;
             key-positions = <17 18>;
             require-prior-idle-ms = <150>;
-            bindings = <&sel_line>;
+            bindings = <&kp C_PP>;
         };
 
 //cmd k
@@ -262,7 +262,7 @@
 //f19
         combo_f19 {
         timeout-ms = <COMBO_SLOW>;
-            key-positions = <16 18>;
+            key-positions = <7 8>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp F19>;
         };
@@ -277,12 +277,12 @@
 
 
 //raycast
-        combo_raycast {
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <11 13>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <RAYCAST>;
-        };
+//        combo_raycast {
+//            timeout-ms = <COMBO_SLOW>;
+//            key-positions = <11 13>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <RAYCAST>;
+//        };
 
 //close tab
         combo_cmdW {
