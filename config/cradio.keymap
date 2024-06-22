@@ -240,17 +240,17 @@
         };
 
 //cmd k
-//        combo_cmdK {             
-//            timeout-ms = <COMBO_SLOW>;
-//            key-positions = <11 12>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <&kp LG(K)>;
-//        };
+        combo_cmdK {             
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp LG(K)>;
+        };
 
 //esc left
         combo_esc_left { 
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <12 13>;
+            key-positions = <1 2>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             //bindings = <&ht LG(K) ESC>;
             bindings = <&kp ESC>;
@@ -259,7 +259,7 @@
 //esc right
         combo_esc_right {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <16 17>;
+            key-positions = <7 8>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp ESC>;
         };
@@ -267,7 +267,7 @@
 //f19
         combo_f19 {
         timeout-ms = <COMBO_SLOW>;
-            key-positions = <7 8>;
+            key-positions = <17 18>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp F19>;
         };
@@ -275,11 +275,18 @@
 //f18
         combo_f18 {
         timeout-ms = <COMBO_FAST>;
-            key-positions = <1 2>;
+            key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp F18>;
         };
 
+//raycast - google
+        combo_ggl {
+        timeout-ms = <COMBO_FAST>;
+            key-positions = <16 17>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp LS(LG(LC(LA(H))))>;
+        };
 
 //raycast
 //        combo_raycast {
