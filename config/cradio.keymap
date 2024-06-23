@@ -273,7 +273,7 @@
 //        };
 
 //return
-        combo_f18 {
+        combo_ret {
         timeout-ms = <COMBO_FAST>;
             key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
