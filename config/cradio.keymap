@@ -223,14 +223,6 @@
             bindings = <DELWORD>;
         };
 
-//select all
-//        combo_selall {
-//            timeout-ms = <COMBO_NORMAL>;
-//            key-positions = <13 14>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <&kp LG(A)>;
-//        };
-
 //play pause
         combo_ppause {
             timeout-ms = <COMBO_NORMAL>;
@@ -264,13 +256,21 @@
             bindings = <&kp ESC>;
         };
 
+//f18
+        combo_f18 {
+        timeout-ms = <COMBO_SLOW>;
+            key-positions = <2 3>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp F18>;
+        };
+
 //f19
-//        combo_f19 {
-//        timeout-ms = <COMBO_SLOW>;
-//            key-positions = <17 18>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <&kp F19>;
-//        };
+        combo_f19 {
+        timeout-ms = <COMBO_SLOW>;
+            key-positions = <6 7>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp F19>;
+        };
 
 //return
         combo_ret {
