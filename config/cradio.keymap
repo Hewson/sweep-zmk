@@ -225,7 +225,7 @@
 
 //select all
 //        combo_selall {
-//            timeout-ms = <COMBO_FAST>;
+//            timeout-ms = <COMBO_NORMAL>;
 //            key-positions = <13 14>;
 //            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
 //            bindings = <&kp LG(A)>;
@@ -241,7 +241,7 @@
 
 //cmd k
         combo_cmdK {             
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <12 13>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(K)>;
@@ -274,7 +274,7 @@
 
 //return
         combo_ret {
-        timeout-ms = <COMBO_FAST>;
+        timeout-ms = <COMBO_NORMAL>;
             key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp RET>;
@@ -282,7 +282,7 @@
 
 //raycast - google
         combo_ggl {
-        timeout-ms = <COMBO_FAST>;
+        timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LS(LG(LC(LA(H))))>;
