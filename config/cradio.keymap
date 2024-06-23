@@ -225,7 +225,7 @@
 
 //play pause
         combo_ppause {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <17 18>;
             require-prior-idle-ms = <150>;
             bindings = <&kp C_PP>;
@@ -233,7 +233,7 @@
 
 //cmd k
         combo_cmdK {             
-            timeout-ms = <COMBO_SLOW>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
@@ -258,7 +258,7 @@
 
 //f18
         combo_f18 {
-        timeout-ms = <COMBO_SLOW>;
+        timeout-ms = <COMBO_FAST>;
             key-positions = <2 3>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp F18>;
@@ -266,7 +266,7 @@
 
 //f19
         combo_f19 {
-        timeout-ms = <COMBO_SLOW>;
+        timeout-ms = <COMBO_FAST>;
             key-positions = <6 7>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp F19>;
@@ -274,7 +274,7 @@
 
 //return
         combo_ret {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp RET>;
@@ -282,7 +282,7 @@
 
 //raycast - google
         combo_ggl {
-            timeout-ms = <COMBO_SLOW>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LS(LG(LC(LA(H))))>;
@@ -298,7 +298,7 @@
 
 //close tab
         combo_cmdW {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <1 2>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(W)>;
@@ -356,7 +356,7 @@
 
 //emdash
         combo_emdash {
-            timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <7 8>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LS(LA(MINUS))>;
