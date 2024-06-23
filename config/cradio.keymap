@@ -243,7 +243,7 @@
         combo_cmdK {             
             timeout-ms = <COMBO_SLOW>;
             key-positions = <12 13>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
 
@@ -284,7 +284,7 @@
         combo_ggl {
         timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17>;
-            require-prior-idle-ms = <150>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LS(LG(LC(LA(H))))>;
         };
 
