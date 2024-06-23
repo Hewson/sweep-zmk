@@ -274,7 +274,7 @@
 
 //return
         combo_ret {
-        timeout-ms = <COMBO_NORMAL>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <11 12>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp RET>;
@@ -282,7 +282,7 @@
 
 //raycast - google
         combo_ggl {
-        timeout-ms = <COMBO_SLOW>;
+            timeout-ms = <COMBO_SLOW>;
             key-positions = <16 17>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LS(LG(LC(LA(H))))>;
