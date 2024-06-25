@@ -680,11 +680,11 @@ HYPER_C       &hl_l 3 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                 
 // layer 1 - navigation and editing - left index??
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   CLOSETAB   MIN       PLAINPASTE  REDO      REDO_TAB                             TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) CMD_W      
+   CLOSETAB   XXX       PLAINPASTE  REDO      REDO_TAB                             TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) CMD_W      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    &kp LSHFT  &kp LALT  &kp LGUI    XXX       XXX                                  TAB_DN    &kp LEFT      &kp DOWN &kp RIGHT     &kp TAB  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   &kp LG(Z)  &kp LG(X) &kp LG(C)   &kp LG(V) &kp LG(B)                            XXX       CMD_K         &kp DEL  &kp LS(RET)   &kp RET  
+   &kp LG(Z)  &kp LG(X) &kp LG(C)   &kp LG(V) &kp LG(B)                            XXX       &kp LS(TAB)   &kp DEL  &kp LS(RET)   &kp RET  
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                                 ___        ___      
                        // └────────────┴─────────┘                          └─────────┴─────────┘
