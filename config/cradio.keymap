@@ -257,12 +257,12 @@
         };
 
 //f18
-        combo_f18 {
-        timeout-ms = <COMBO_FAST>;
-            key-positions = <2 3>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp F18>;
-        };
+//        combo_f18 {
+//        timeout-ms = <COMBO_FAST>;
+//            key-positions = <2 3>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <&kp F18>;
+//        };
 
 //f19
         combo_f19 {
@@ -445,15 +445,15 @@
 //hyper hyphen        
         combo_cmdHyphen {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <0 1>;
+            key-positions = <2 4>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LA(LC(LS(LG(MINUS))))>;
         };
         
 //save
         combo_cmdS {
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <0 3>;
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <2 3>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(S)>;
         };
