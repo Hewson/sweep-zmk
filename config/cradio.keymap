@@ -444,8 +444,8 @@
 
 //hyper hyphen        
         combo_cmdHyphen {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <2 4>;
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <13 14>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LA(LC(LS(LG(MINUS))))>;
         };
