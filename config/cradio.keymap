@@ -654,13 +654,13 @@
 //canary
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-&emp 0 W      &ht LS(N3) L  &ht LS(N7) Y  &cl 0 P      &emw 0 B                    &ht BBIT Z  &ht LS(N4) F  &ed 0 O      &ht LS(N5) U  &ht GGPT SEMI      
+&emp 0 W     &ht LS(N3) L         &ht LS(N7) Y &cl 0 P     &emw 0 B                &ht BBIT Z  &ht LS(N4) F  &ed 0 O      &ht LS(N5) U  &ht GGPT SEMI      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-HYPER_C       &hl_l 3 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                    &ra 0 M     &ht LS(N1) N  &ab 0 E      &ht LS(N8) I  HYPER_A       
+HYPER_C &ht LS(LG(LC(LA(SQT)))) R &ht LS(N2) S &hl_l 1 T   &sal 0 G                &ra 0 M     &ht LS(N1) N  &ab 0 E      &ht LS(N8) I  HYPER_A       
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-&ht LG(Z) Q   &ht CCLIP J   &ht LG(C) V   &ht LG(V) D  &hl_l 4 K                   &ob 0 X     &ht GGL H     &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
+&ht LG(Z) Q  &ht CCLIP J          &ht LG(C) V  &ht LG(V) D &hl_l 4 K               &ob 0 X     &ht GGL H     &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &as RGUI LS(LG(LC(LA(SQT))))         &kp BSPC  &gqt_l 2 SPACE     
+                           &sk LSHIFT   &mo 3                                &as RGUI BSPC  &gqt_l 2 SPACE     
                        // └────────────┴─────────┘                          └─────────┴─────────┘
 
                         >;
