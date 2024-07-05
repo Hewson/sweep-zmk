@@ -244,7 +244,7 @@
         combo_esc_left { 
             timeout-ms = <COMBO_SLOW>;
             key-positions = <2 12>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            require-prior-idle-ms = <50>;
             //bindings = <&ht LG(K) ESC>;
             bindings = <&kp ESC>;
         };
@@ -253,7 +253,7 @@
         combo_esc_right {
             timeout-ms = <COMBO_SLOW>;
             key-positions = <7 17>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            require-prior-idle-ms = <50>;
             bindings = <&kp ESC>;
         };
 
@@ -372,7 +372,7 @@
 
 //delete left hand
         combo_delete_left {
-            timeout-ms = <COMBO_SLOW>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <3 13>;
             require-prior-idle-ms = <150>;
             bindings = <&kp DEL>;
@@ -436,9 +436,9 @@
 
 //bullets
         combo_bullets {
-            timeout-ms = <COMBO_FAST>;
+            timeout-ms = <COMBO_NORMAL>;
             key-positions = <6 16>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp LG(LS(N8))>;
         };
 
