@@ -234,9 +234,9 @@
 
 //cmd k
         combo_cmdK {             
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <12 13>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            timeout-ms = <COMBO_NORMAL>;
+            key-positions = <13 14>;
+            require-prior-idle-ms = <150>;
             bindings = <&kp LG(K)>;
         };
 
@@ -268,8 +268,8 @@
 //raycast
         combo_raycast {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <13 14>;
-            require-prior-idle-ms = <150>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <RAYCAST>;
         };
 
