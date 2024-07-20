@@ -370,12 +370,12 @@
             bindings = <&kp LG(Z)>;
         };
 
-//delete left hand
+//backspace left hand
         combo_delete_left {
             timeout-ms = <COMBO_NORMAL>;
             key-positions = <3 13>;
             require-prior-idle-ms = <150>;
-            bindings = <&kp DEL>;
+            bindings = <&kp BSPC>;
         };
 
 //copy
