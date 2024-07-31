@@ -240,6 +240,14 @@
             bindings = <&kp LG(K)>;
         };
 
+//tab
+        combo_tab {             
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <10 13>;
+            require-prior-idle-ms = <150>;
+            bindings = <&kp TAB>;
+        };
+
 //esc left
         combo_esc_left { 
             timeout-ms = <COMBO_SLOW>;
