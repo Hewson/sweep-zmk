@@ -1,9 +1,3 @@
-/*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -33,9 +27,7 @@
 //shortcuts
 #define HYPER_A &gqt LS(LG(LC(LALT))) A
 #define HYPER_C &gqt LS(LG(LC(LALT))) C
-
 #define RAYCAST &kp LS(LG(LC(LA(SQT))))
-
 #define CLOSETAB &kp LG(W)
 #define DELWORD &kp LA(BSPC)
 #define PLAINPASTE &kp LS(LA(LG(V))) 
@@ -54,7 +46,6 @@
 
 //hyper keys
 #define TTASK LS(LG(LC(LA(K)))) //todoist task
-
 #define CCLIP LS(LG(LC(LA(J)))) //raycast clipboard
 #define SSHOT LS(LG(LC(LA(P)))) //screenshot
 #define GGL LS(LG(LC(LA(H)))) //raycast google
@@ -71,7 +62,7 @@
 };
 
 &sk {  // Sticky Layer Change
-    release-after-ms = <3000>;
+    release-after-ms = <1500>;
     quick-release;
 };
 
@@ -96,6 +87,7 @@
                 , <&kp LEFT>
                 ;
         };
+
         selall_copy: selall_copy {
             label = "selall_copy";
             compatible = "zmk,behavior-macro";
@@ -105,6 +97,7 @@
                 , <&kp LG(C)>
                 ;
         };
+
         sel_line: sel_line {
             label = "sel_line";
             compatible = "zmk,behavior-macro";
@@ -114,6 +107,7 @@
                 , <&kp LG(LS(LEFT))>
                 ;
         };
+
         sel_word: sel_word {
             label = "sel_word";
             compatible = "zmk,behavior-macro";
@@ -170,6 +164,7 @@
                 = <&macro_tap &kp MINUS>
                 ;
         };
+
         rarrow: rarrow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -211,6 +206,14 @@
                 = <&macro_tap &kp LG(A)>
                 ;
         };
+
+        emdash: emdash {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LS(LA(MINUS))>
+                ;
+        };
     };
 
     combos {
@@ -240,6 +243,14 @@
             bindings = <&kp LG(K)>;
         };
 
+//num layer
+        combo_numlayer {             
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <11 12 13>;
+            require-prior-idle-ms = <20>;
+            bindings = <&mo 3>;
+        };
+
 //tab
         combo_tab {             
             timeout-ms = <COMBO_SLOW>;
@@ -265,13 +276,13 @@
             bindings = <&kp ESC>;
         };
 
-//f18
-//        combo_f18 {
-//        timeout-ms = <COMBO_FAST>;
-//            key-positions = <2 3>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <&kp F18>;
-//        };
+//find
+        combo_f18 {
+        timeout-ms = <COMBO_FAST>;
+            key-positions = <2 3>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+            bindings = <&kp LG(F)>;
+        };
 
 //raycast
         combo_raycast {
@@ -282,12 +293,12 @@
         };
 
 //f19
-        combo_f19 {
-        timeout-ms = <COMBO_FAST>;
-            key-positions = <6 7>;
-            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-            bindings = <&kp F19>;
-        };
+//        combo_f19 {
+//        timeout-ms = <COMBO_FAST>;
+//            key-positions = <6 7>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <&kp F19>;
+//        };
 
 //return
         combo_ret {
@@ -345,15 +356,6 @@
             bindings = <LOCK>;
         };        
 
-//find        
-        combo_find {
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <21 22 23>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp LG(F)>;
-
-        };
-
 //cmd comma
         combo_cmdComma {
             timeout-ms = <COMBO_NORMAL>;
@@ -363,12 +365,12 @@
         };
 
 //emdash
-        combo_emdash {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <7 8>;
-            require-prior-idle-ms = <150>;
-            bindings = <&kp LS(LA(MINUS))>;
-        };
+//        combo_emdash {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <7 8>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp LS(LA(MINUS))>;
+//        };
 
 //undo - left
         combo_undo_left {
@@ -486,6 +488,7 @@
             require-prior-idle-ms = <HR_IDLE_TERM>;   
             bindings = <&kp>, <&kp>;
         };
+
         gqt_l: thumb_right_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "GLOBAL_QUICK_TAP_SPACE";
@@ -495,6 +498,7 @@
             require-prior-idle-ms = <15>;         
             bindings = <&mo>, <&kp>;
         };
+
         hr_l: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
@@ -507,6 +511,7 @@
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;            
         };
+
         hr_r: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT";
@@ -519,6 +524,7 @@
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;           
         };
+
         hl_l: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYERS_LEFT";
@@ -531,6 +537,7 @@
             hold-trigger-key-positions = <KEYS_R KEYS_T>;
             hold-trigger-on-release;            
         };
+
         hl_r: homerow_layers_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYERS_RIGHT";
@@ -543,6 +550,7 @@
             hold-trigger-key-positions = <KEYS_L KEYS_T>;
             hold-trigger-on-release;            
         };
+
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -558,6 +566,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -566,6 +575,7 @@
             flavor = "tap-preferred";
             bindings = <&tap>, <&kp>;
         };
+//personal email
         emp: emp {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -574,6 +584,7 @@
             flavor = "tap-preferred";
             bindings = <&emailp>, <&kp>;
         };
+//work email
         emw: emw {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -582,7 +593,7 @@
             flavor = "tap-preferred";
             bindings = <&emailw>, <&kp>;
         };
-
+//date 1
         td: td {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -591,7 +602,7 @@
             flavor = "tap-preferred";
             bindings = <&tdate>, <&kp>;
         };
-
+//date 2
         ttd: ttd {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -600,7 +611,7 @@
             flavor = "tap-preferred";
             bindings = <&ttdate>, <&kp>;
         };
-
+//dash
         ed: ed {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -609,6 +620,7 @@
             flavor = "tap-preferred";
             bindings = <&ddash>, <&kp>;
         };
+//brackets
         ab: ab {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -617,6 +629,7 @@
             flavor = "tap-preferred";
             bindings = <&auto_brackets>, <&kp>;
         };
+//right arrow        
         ra: ra {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -625,7 +638,7 @@
             flavor = "tap-preferred";
             bindings = <&rarrow>, <&kp>;
         };
-
+//rcmd
         rc: rc {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -634,7 +647,7 @@
             flavor = "tap-preferred";
             bindings = <&rcmdd>, <&kp>;
         };
-        
+//copy link        
         cl: cl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -643,7 +656,7 @@
             flavor = "tap-preferred";
             bindings = <&cplink>, <&kp>;
         };
-
+//obsidian
         ob: ob {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -653,6 +666,7 @@
             bindings = <&obs>, <&kp>;
         };
 
+//select all
         sal: sal {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -661,6 +675,18 @@
             flavor = "tap-preferred";
             bindings = <&seall>, <&kp>;
         };
+
+//emdash
+        emd: emd {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <HOLD_TIME>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&emdash>, <&kp>;
+        };
+
+        emdash
     };
 
         keymap {
@@ -670,15 +696,27 @@
                         bindings = <
 //canary
 
-//┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-&emp 0 W     &ht LS(N3) L &ht LS(N7) Y &cl 0 P     &emw 0 B                        &ht BBIT Z  &ht LS(N4) F  &ht LS(N8) O &ht LS(N5) U  &ht GGPT SEMI      
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T   &sal 0 G                        &ra 0 M     &ht LS(N1) N  &ab 0 E      &ed 0 I       HYPER_A       
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V  &ht LG(V) D &hl_l 4 K                       &ob 0 X     &kp H         &td 0 COMMA  &ttd 0 DOT    AS_FSLH   
-//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &mo 3                                &as RGUI BSPC  &gqt_l 2 SPACE     
-                       // └────────────┴─────────┘                          └─────────┴─────────┘
+// hold functions
+//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+//pers email     #         &       copy link  scale email                    bitwarden     $            *            %       chat gpt      
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+//   hyper   screenshot    @        layer 1   select all                       arrow       !        brackets       hyphen      hyper       
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+//    undo   clipboard   copy        paste     layer 4                        obsidian   em dash      date 1       date 2     question   
+//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
+//                            shift       &mo 3                           rgui    layer 2     
+                       // └────────────┴─────────┘                      └─────────┴─────────┘
+
+
+//┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+&emp 0 W     &ht LS(N3) L &ht LS(N7) Y &cl 0 P      &emw 0 B                 &ht BBIT Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T    &sal 0 G                 &ra 0 M     &ht LS(N1) N  &ab 0 E       &ed 0 I       HYPER_A       
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V  &ht LG(V) D  &hl_l 4 K                &ob 0 X     &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
+//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
+                           &sk LSHIFT   &mo 3                            &as RGUI BSPC  &gqt_l 2 SPACE     
+                       // └────────────┴─────────┘                      └─────────┴─────────┘
 
                         >;
                 };
@@ -687,15 +725,15 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T   &sal 0 G                     
 
 // layer 1 - navigation and editing - left index??
 
-//┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   CLOSETAB   XXX       PLAINPASTE  REDO      REDO_TAB                             TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) CMD_W      
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   &kp LSHFT  &kp LALT  &kp LGUI    XXX       XXX                                  TAB_DN    &kp LEFT      &kp DOWN &kp RIGHT     &kp TAB  
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   &kp LG(Z)  &kp LG(X) &kp LG(C)   &kp LG(V) &kp LG(B)                            XXX       &kp LS(TAB)   &kp DEL  &kp LS(RET)   &kp RET  
-//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
-                            ___          ___                                 ___        ___      
-                       // └────────────┴─────────┘                          └─────────┴─────────┘
+//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+   CLOSETAB   XXX       PLAINPASTE  REDO      REDO_TAB                       TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) CMD_W      
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   &kp LSHFT  &kp LALT  &kp LGUI    XXX       XXX                            TAB_DN    &kp LEFT      &kp DOWN &kp RIGHT     &kp TAB  
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   &kp LG(Z)  &kp LG(X) &kp LG(C)   &kp LG(V) &kp LG(B)                      XXX       &kp LS(TAB)   &kp DEL  &kp LS(RET)   &kp RET  
+//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
+                            ___          ___                            ___        ___      
+                       // └────────────┴─────────┘                    └─────────┴─────────┘
                         >;
                 };
 
@@ -704,15 +742,15 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T   &sal 0 G                     
 
 // layer 2 - symbols and media - right thumb
   
-//┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       &kp LS(LBKT) &kp LS(RBKT)  XXX                              &kp TILDE &kp C_NEXT   &kp C_BRI_UP XXX          XXX     
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       &kp LBKT     &kp RBKT      XXX                              &kp BSLH  &kp C_VOL_DN &kp C_BRI_DN &kp C_VOL_UP XXX
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX          XXX           XXX                              XXX       &kp LS(N9)   &kp LS(N0)   XXX          XXX     
-//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
-                            ___          ___                                 ___        ___      
-                       // └────────────┴─────────┘                          └─────────┴─────────┘
+//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+   XXX       XXX       &kp LS(LBKT) &kp LS(RBKT)  XXX                        &kp TILDE &kp C_NEXT   &kp C_BRI_UP XXX          XXX     
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   XXX       XXX       &kp LBKT     &kp RBKT      XXX                        &kp BSLH  &kp C_VOL_DN &kp C_BRI_DN &kp C_VOL_UP XXX
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   XXX       XXX       XXX          XXX           XXX                        XXX       &kp LS(N9)   &kp LS(N0)   XXX          XXX     
+//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
+                            ___          ___                            ___        ___      
+                       // └────────────┴─────────┘                    └─────────┴─────────┘
                         >;
                 };
 
@@ -721,15 +759,15 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T   &sal 0 G                     
 
 // layer 3 - numbers and settings and nav - left ring finger
 
-//┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        XXX         XXX                                  &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       &kp LGUI   XXX         XXX                                  &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX        XXX         XXX                                  &kp N0    &kp N1     &kp N2        &kp N3      XXX            
-//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
-                            ___          ___                                 ___        ___      
-                       // └────────────┴─────────┘                          └─────────┴─────────┘
+//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+   XXX       XXX       XXX        XXX         XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   XXX       XXX       &kp LGUI   XXX         XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   XXX       XXX       XXX        XXX         XXX                            &kp N0    &kp N1     &kp N2        &kp N3      XXX            
+//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
+                            ___          ___                            ___        ___      
+                       // └────────────┴─────────┘                    └─────────┴─────────┘
                         >;
                 };
 
@@ -738,15 +776,15 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T   &sal 0 G                     
 
 // layer 4 - other home row - left pinky
 
-//┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        XXX         XXX                                  XXX       &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR  
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX        XXX         XXX                                  XXX       XXX           XXX           XXX           XXX        
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-&bootloader  XXX       XXX        XXX         XXX                                  XXX       XXX           XXX           XXX           &bootloader        
-//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
-                            ___          ___                                 ___        ___      
-                       // └────────────┴─────────┘                          └─────────┴─────────┘
+//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+   XXX       XXX       XXX        XXX         XXX                            XXX       &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR  
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   XXX       XXX       XXX        XXX         XXX                            XXX       XXX           XXX           XXX           XXX        
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+&bootloader  XXX       XXX        XXX         XXX                            XXX       XXX           XXX           XXX           &bootloader        
+//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
+                            ___          ___                           ___        ___      
+                       // └────────────┴─────────┘                    └─────────┴─────────┘
                         >;
                 };
                 sym_layer {
@@ -754,15 +792,15 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T   &sal 0 G                     
 
 // layer 5 - right index
 
-//┌─────────┬─────────┬──────────┬───────────┬─────────┐                          ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        XXX         XXX                                  XXX       XXX        XXX           XXX         XXX        
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX        XXX         XXX                                  XXX       XXX        XXX           XXX         XXX        
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                          ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX        XXX         XXX                                  XXX       XXX        XXX           XXX         XXX        
-//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                          └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
-                            ___          ___                                 ___        ___      
-                       // └────────────┴─────────┘                          └─────────┴─────────┘
+//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        
+//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+   XXX       XXX       XXX        XXX         XXX                            XXX       XXX        XXX           XXX         XXX        
+//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
+                            ___          ___                           ___        ___      
+                       // └────────────┴─────────┘                    └─────────┴─────────┘
                         >;
                 };
         };
