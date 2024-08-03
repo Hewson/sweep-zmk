@@ -686,7 +686,6 @@
             bindings = <&emdash>, <&kp>;
         };
 
-        emdash
     };
 
         keymap {
