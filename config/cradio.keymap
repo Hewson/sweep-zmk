@@ -246,16 +246,16 @@
 //num layer
         combo_numlayer {             
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <11 12 13>;
-            require-prior-idle-ms = <20>;
+            key-positions = <10 13>;
+            require-prior-idle-ms = <50>;
             bindings = <&mo 3>;
         };
 
 //tab
         combo_tab {             
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <10 13>;
-            require-prior-idle-ms = <150>;
+            key-positions = <11 12 13>;
+            require-prior-idle-ms = <20>;
             bindings = <&kp TAB>;
         };
 
@@ -298,6 +298,14 @@
 //            key-positions = <6 7>;
 //            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
 //            bindings = <&kp F19>;
+//        };
+
+//emdash
+//        combo_emdash {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <7 8>;
+//            require-prior-idle-ms = <150>;
+//            bindings = <&kp LS(LA(MINUS))>;
 //        };
 
 //return
@@ -363,14 +371,6 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(COMMA)>;
         };
-
-//emdash
-//        combo_emdash {
-//            timeout-ms = <COMBO_FAST>;
-//            key-positions = <7 8>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LS(LA(MINUS))>;
-//        };
 
 //undo - left
         combo_undo_left {
@@ -695,16 +695,16 @@
                         bindings = <
 //canary
 
-// hold functions
-//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-//pers email     #         &       copy link  scale email                    bitwarden     $            *            %       chat gpt      
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-//   hyper   screenshot    @        layer 1   select all                       arrow       !        brackets       hyphen      hyper       
-//├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-//    undo   clipboard   copy        paste     layer 4                        obsidian   em dash      date 1       date 2     question   
-//└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-//                            shift       &mo 3                           rgui    layer 2     
-                       // └────────────┴─────────┘                      └─────────┴─────────┘
+/* hold functions
+  ┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+  pers email     #         &       copy link  scale email                    bitwarden     $            *            %       chat gpt      
+  ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+     hyper   screenshot    @        layer 1   select all                       arrow       !        brackets       hyphen      hyper       
+  ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
+      undo   clipboard   copy        paste     layer 4                        obsidian   em dash      date 1       date 2     question   
+  └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
+                              shift     repeat key                         rgui    layer 2     
+                          └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 
 //┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
@@ -714,7 +714,7 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T    &sal 0 G                 &ra
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V  &ht LG(V) D  &hl_l 4 K                &ob 0 X     &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &mo 3                            &as RGUI BSPC  &gqt_l 2 SPACE     
+                           &sk LSHIFT   &key_repeat                      &as RGUI BSPC  &gqt_l 2 SPACE     
                        // └────────────┴─────────┘                      └─────────┴─────────┘
 
                         >;
