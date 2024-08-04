@@ -247,7 +247,7 @@
         combo_numlayer {             
             timeout-ms = <COMBO_SLOW>;
             key-positions = <13 14>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <20>;
             bindings = <&mo 3>;
         };
 
