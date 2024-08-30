@@ -282,22 +282,6 @@
             bindings = <RAYCAST>;
         };
 
-//f19
-//        combo_f19 {
-//        timeout-ms = <COMBO_FAST>;
-//            key-positions = <6 7>;
-//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
-//            bindings = <&kp F19>;
-//        };
-
-//emdash
-//        combo_emdash {
-//            timeout-ms = <COMBO_FAST>;
-//            key-positions = <7 8>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LS(LA(MINUS))>;
-//        };
-
 //return
         combo_ret {
             timeout-ms = <COMBO_FAST>;
@@ -322,7 +306,7 @@
             bindings = <&kp LG(W)>;
         };
 
-//triple points
+//right triple middle
 //        combo_aprostophe {
 //            timeout-ms = <COMBO_SLOW>;
 //            key-positions = <16 17 18>;
@@ -362,14 +346,6 @@
             bindings = <&kp LG(COMMA)>;
         };
 
-//undo - left
-//        combo_undo_left {
-//            timeout-ms = <COMBO_FAST>;
-//            key-positions = <20 21>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LG(Z)>;
-//        };
-
 //backspace left hand
         combo_delete_left {
             timeout-ms = <COMBO_NORMAL>;
@@ -378,21 +354,14 @@
             bindings = <&kp BSPC>;
         };
 
-//copy
-//        combo_copy {
-//            timeout-ms = <COMBO_NORMAL>;
-//            key-positions = <21 22>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LG(C)>;
-//        };
 
-//paste
-//        combo_paste {
-//            timeout-ms = <COMBO_NORMAL>;
-//            key-positions = <21 23>;
-//            require-prior-idle-ms = <150>;
-//            bindings = <&kp LG(V)>;
-//        };
+//backspace - right
+        combo_bspcr {
+            timeout-ms = <COMBO_FAST>;
+            key-positions = <6 16>;
+            require-prior-idle-ms = <20>;
+            bindings = <&kp BSPC>;
+        };
 
 //cut
         combo_cut {
@@ -432,14 +401,6 @@
             key-positions = <1 11>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(R)>;
-        };
-
-//backspace - right
-        combo_bspcr {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <6 16>;
-            require-prior-idle-ms = <20>;
-            bindings = <&kp BSPC>;
         };
 
 //bullets
@@ -697,11 +658,11 @@
   ┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
   pers email     #         &       copy link  scale email                    bitwarden     $            *            %       chat gpt      
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-     hyper   screenshot    @        layer 1   select all                       arrow       !        brackets       hyphen      hyper       
+     hyper   screenshot    @        layer 1   select all                       arrow       !        brackets       hyphen     hyper       
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-      undo   clipboard   copy        paste     layer 4                        obsidian   em dash      date 1       date 2     question   
+      undo   clipboard   copy        paste     layer 4                        obsidian   em dash      date 1       date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                              shift     play pause                       XXX  layer 2     
+                              shift     play pause                       XXX       layer 2     
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 
@@ -723,7 +684,7 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T    &sal 0 G                 &ra
 // layer 1 - navigation and editing - left index??
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   CLOSETAB   XXX       PLAINPASTE  REDO      REDO_TAB                       TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) CMD_W      
+   CLOSETAB   &kp LG(I)  PLAINPASTE  REDO      REDO_TAB                       TAB_UP    &kp LG(MINUS) &kp UP   &kp LG(EQUAL) CMD_W      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    &kp LSHFT  &kp LALT  &kp LGUI    XXX       XXX                            TAB_DN    &kp LEFT      &kp DOWN &kp RIGHT     &kp TAB  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
