@@ -435,7 +435,7 @@
         };
 
 //backspace - right
-        combo_bullets {
+        combo_bspcr {
             timeout-ms = <COMBO_FAST>;
             key-positions = <6 16>;
             require-prior-idle-ms = <20>;
