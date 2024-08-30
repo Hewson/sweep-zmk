@@ -15,7 +15,7 @@
 #define COMBO_FAST 20
 #define COMBO_NORMAL 30
 #define COMBO_SLOW 45
-#define HOLD_TIME 200
+#define HOLD_TIME 250
 
 #define DEFAULT 0
 #define LOWER   1
