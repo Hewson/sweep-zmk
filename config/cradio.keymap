@@ -228,16 +228,16 @@
 //cmd k - left
         combo_cmdK_l {             
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <1 11>;
-            require-prior-idle-ms = <150>;
+            key-positions = <12 22>;
+            require-prior-idle-ms = <50>;
             bindings = <&kp LG(K)>;
         };
 
 //cmd k - right
         combo_cmdK_r {             
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <8 18>;
-            require-prior-idle-ms = <150>;
+            key-positions = <17 27>;
+            require-prior-idle-ms = <50>;
             bindings = <&kp LG(K)>;
         };
 
@@ -672,7 +672,6 @@
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
                               shift     play pause                       XXX       layer 2     
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
-
 
 //┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
 &emp 0 W     &ht LS(N3) L &ht LS(N7) Y &cl 0 P      &emw 0 B                 &ht BBIT Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
