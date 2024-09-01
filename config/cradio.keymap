@@ -228,7 +228,7 @@
 //cmd k - left
         combo_cmdK_l {             
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <12 22>;
+            key-positions = <13 23>;
             require-prior-idle-ms = <50>;
             bindings = <&kp LG(K)>;
         };
@@ -236,7 +236,7 @@
 //cmd k - right
         combo_cmdK_r {             
             timeout-ms = <COMBO_SLOW>;
-            key-positions = <17 27>;
+            key-positions = <16 26>;
             require-prior-idle-ms = <50>;
             bindings = <&kp LG(K)>;
         };
@@ -374,15 +374,15 @@
 //cut
         combo_cut {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <13 23>;
+            key-positions = <12 22>;
             require-prior-idle-ms = <50>;
             bindings = <&kp LG(X)>;
         };
-
+        
 //to do bullets
         combo_cmdL {
             timeout-ms = <COMBO_FAST>;
-            key-positions = <16 26>;
+            key-positions = <17 27>;
             require-prior-idle-ms = <50>;
             bindings = <&kp LG(L)>;
         };
