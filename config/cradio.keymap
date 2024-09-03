@@ -364,12 +364,12 @@
 
 
 //backspace - right
-        combo_bspcr {
-            timeout-ms = <COMBO_FAST>;
-            key-positions = <6 16>;
-            require-prior-idle-ms = <20>;
-            bindings = <&kp BSPC>;
-        };
+//        combo_bspcr {
+//            timeout-ms = <COMBO_FAST>;
+//            key-positions = <6 16>;
+//            require-prior-idle-ms = <20>;
+//            bindings = <&kp BSPC>;
+//        };
 
 //cut
         combo_cut {
