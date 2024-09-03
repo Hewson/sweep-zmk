@@ -691,7 +691,7 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T    &sal 0 G                 &ra
 // layer 1 - navigation and editing - left index??
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   CLOSETAB   &kp LG(I)  PLAINPASTE  REDO      REDO_TAB                      TAB_UP    &kp LG(MINUS) &kp UP     &kp LG(EQUAL)  CMD_W      
+   CLOSETAB   &kp LG(I) PLAINPASTE  REDO      REDO_TAB                       TAB_UP    &kp LG(MINUS) &kp UP     &kp LG(EQUAL)  CMD_W      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    &kp LSHFT  &kp LALT  &kp LGUI    XXX       XXX                            TAB_DN    &kp LEFT      &kp DOWN   &kp RIGHT      &kp TAB  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
@@ -708,11 +708,11 @@ HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T    &sal 0 G                 &ra
 // layer 2 - symbols and media - right thumb
   
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       &kp LS(LBKT) &kp LS(RBKT)  XXX                        &kp TILDE &kp C_NEXT   &kp C_BRI_UP XXX          XXX     
+   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE &kp C_NEXT  &kp C_BRI_UP  &kp C_VOL_UP   XXX     
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       &kp LBKT     &kp RBKT      XXX                        &kp BSLH  &kp C_VOL_DN &kp C_BRI_DN &kp C_VOL_UP XXX
+   XXX       XXX       &kp LGUI   &kp LBKT     &kp RBKT                      &kp BSLH  &kp BSPC    &kp C_BRI_DN  &kp C_VOL_DN   XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX          XXX           XXX                        XXX       &kp LS(N9)   &kp LS(N0)   XXX          XXX     
+   XXX       XXX       XXX        XXX          XXX                           XXX       &kp LS(N9)  &kp LS(N0)    XXX            XXX     
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
