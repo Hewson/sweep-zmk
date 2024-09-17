@@ -241,12 +241,12 @@
             bindings = <&kp LG(K)>;
         };
 
-//num layer
+//screenshot
         combo_numlayer {             
             timeout-ms = <COMBO_SLOW>;
             key-positions = <13 14>;
             require-prior-idle-ms = <20>;
-            bindings = <&mo 3>;
+            bindings = <SSHOT>;
         };
 
 //tab
@@ -666,7 +666,7 @@
   ┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
   pers email     #         &       copy link  scale email                    bitwarden     $            *            %       chat gpt      
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-     hyper   screenshot    @        layer 1   select all                       arrow       !        brackets       hyphen     hyper       
+     hyper   number lay    @        layer 1   select all                       arrow       !        brackets       hyphen     hyper       
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
      undo    clipboard    copy       paste     layer 4                        obsidian   em dash      date 1       date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
@@ -674,11 +674,11 @@
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 //┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-&emp 0 W     &ht LS(N3) L &ht LS(N7) Y &cl 0 P      &emw 0 B                 &ht BBIT Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
+&emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &emw 0 B                &ht BBIT Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-HYPER_C      &ht SSHOT R  &ht LS(N2) S &hl_l 1 T    &sal 0 G                 &ra 0 M     &ht LS(N1) N  &ab 0 E       &ed 0 I       HYPER_A       
+HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M     &ht LS(N1) N  &ab 0 E       &ed 0 I       HYPER_A       
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V  &ht LG(V) D  &hl_l 4 K                &ob 0 X     &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
+&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &ob 0 X     &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
                            &sk LSHIFT  &kp C_PP                           XXX &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘
