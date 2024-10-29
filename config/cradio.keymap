@@ -655,23 +655,24 @@
 
 /* hold functions
   ┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-  pers email     #         &       copy link  scale email                    bitwarden     $            *            %       chat gpt      
+  pers email     #         &       copy link  bitwarden                         xxx        $            *            %       chat gpt      
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
      hyper   number lay    @        layer 1   select all                       arrow       !        brackets       hyphen     hyper       
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-     undo    clipboard    copy       paste     layer 4                        obsidian   em dash      date 1       date 2    question   
+     undo    clipboard    copy       paste     layer 4                        obsidian   em dash     date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                             shift      play pause                         XXX     layer 2                    
+                             shift      play pause                         bold     layer 2                    
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
+
 //┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-&emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &emw 0 B                &ht BBIT Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
+&emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &ht BBIT Z              XXX         &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M     &ht LS(N1) N  &ab 0 E       &ed 0 I       HYPER_A       
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &ob 0 X     &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT  &kp C_PP                           XXX &gqt_l 2 SPACE   
+                           &sk LSHIFT  &kp C_PP                          &kp LG(B) &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
 
                         >;
@@ -682,11 +683,11 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 1 - navigation and editing - left index??
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   &kp BSPC   &kp LG(I) PLAINPASTE  REDO      REDO_TAB                       TAB_UP    &kp LG(MINUS) &kp UP     &kp LG(EQUAL)  CMD_W      
+   &kp BSPC   &kp LG(I) PLAINPASTE  XXX       XXX                            TAB_UP    &kp LG(MINUS) &kp UP     &kp LG(EQUAL)  CMD_W      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   &kp LSHFT  &kp LALT  &kp LGUI    XXX       XXX                            TAB_DN    &kp LEFT      &kp DOWN   &kp RIGHT      &kp TAB  
+   &kp LSHFT  &kp LALT  &kp LGUI    XXX       REDO                           TAB_DN    &kp LEFT      &kp DOWN   &kp RIGHT      &kp TAB  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   &kp LG(Z)  &kp LG(X) &kp LG(C)   &kp LG(V) &kp LG(B)                      XXX       &kp LS(TAB)   &kp DEL    &kp LS(RET)    &kp RET  
+   &kp LG(Z)  &kp LG(X) &kp LG(C)   &kp LG(V) REDO_TAB                       XXX       &kp LS(TAB)   &kp DEL    &kp LS(RET)    &kp RET  
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
@@ -716,11 +717,11 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 3 - numbers and settings and nav - left ring finger
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        &kp LG(U)   XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
+   XXX       XXX       XXX        &kp LG(I)   XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       &kp LGUI   &kp LG(B)   XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
+   XXX       XXX       &kp LGUI   &kp LG(U)   XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX        &kp LG(I)   XXX                            &kp N0    &kp N1     &kp N2        &kp N3      XXX            
+   XXX       XXX       XXX        XXX         XXX                            &kp N0    &kp N1     &kp N2        &kp N3      XXX            
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
