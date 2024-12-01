@@ -661,7 +661,7 @@
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
      undo    clipboard    copy       paste     layer 4                        obsidian  em dash      date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                             shift      play pause                         bold     layer 2                    
+                             shift      number layer                         bold     layer 2                    
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 
@@ -672,7 +672,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &ob 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT  &kp C_PP                          &kp LG(B) &gqt_l 2 SPACE   
+                           &sk LSHIFT   &tog 3                           &kp LG(B) &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
 
                         >;
@@ -700,7 +700,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 2 - symbols and media - right thumb
   
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE &kp C_NEXT  &kp C_BRI_UP  &kp C_VOL_UP   XXX     
+   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE XXX         &kp C_BRI_UP  &kp C_VOL_UP   XXX     
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    XXX       XXX       &kp LGUI   &kp LBKT     &kp RBKT                      &kp BSLH  &kp BSPC    &kp C_BRI_DN  &kp C_VOL_DN   XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
@@ -717,11 +717,11 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 3 - numbers and settings and nav - left ring finger
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        &kp LG(I)   XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
+   &kp C_PP   XXX      XXX        &kp LG(I)   XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       &kp LGUI   &kp LG(U)   XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
+   &kp C_NEXT XXX      &kp LGUI   &kp LG(U)   XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX       XXX       XXX        XXX         XXX                            &kp N0    &kp N1     &kp N2        &kp N3      XXX            
+   XXX        XXX      XXX        XXX         XXX                            &kp N0    &kp N1     &kp N2        &kp N3      &kp MINUS            
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
