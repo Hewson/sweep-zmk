@@ -661,7 +661,7 @@
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
      undo    clipboard    copy       paste     layer 4                        obsidian  em dash      date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                             shift      number layer                         bold     layer 2                    
+                             shift      number layer                     play/pause layer 2                    
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 
@@ -672,7 +672,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &ob 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &tog 3                           &kp LG(B) &gqt_l 2 SPACE   
+                           &sk LSHIFT   &tog 3                           &kp C_PP &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
 
                         >;
@@ -700,7 +700,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 2 - symbols and media - right thumb
   
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE XXX         &kp C_BRI_UP  &kp C_VOL_UP   XXX     
+   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE &kp LG(B)   &kp C_BRI_UP  &kp C_VOL_UP   XXX     
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    XXX       XXX       &kp LGUI   &kp LBKT     &kp RBKT                      &kp BSLH  &kp BSPC    &kp C_BRI_DN  &kp C_VOL_DN   XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
