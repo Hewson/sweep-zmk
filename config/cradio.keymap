@@ -103,6 +103,14 @@
                 = <&kp LA(LS(LEFT))>
                 ;
         };
+
+        sched: sched {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LA(LS(LG(LC(M))))>
+                ;
+        };
         
         tap: tap {
             compatible = "zmk,behavior-macro-one-param";
@@ -178,11 +186,11 @@
                 ;
         };
 
-        obs: obs {
+        dict: dict {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LS(LG(LC(LA(X))))>
+                = <&macro_tap &kp RCMD &kp RCMD>
                 ;
         };
 
@@ -199,6 +207,14 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LS(LA(MINUS))>
+                ;
+        };
+
+        slact: slact {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LC(N3)>
                 ;
         };
     };
@@ -614,14 +630,14 @@
             flavor = "tap-preferred";
             bindings = <&cplink>, <&kp>;
         };
-//obsidian
-        ob: ob {
+//dictation
+        di: di {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping_term_ms = <HOLD_TIME>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&obs>, <&kp>;
+            bindings = <&dict>, <&kp>;
         };
 
 //select all
@@ -644,6 +660,26 @@
             bindings = <&emdash>, <&kp>;
         };
 
+//schedule
+        sch: sch {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <HOLD_TIME>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&sched>, <&kp>;
+        };
+
+//slack activity
+        sla: sla {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <HOLD_TIME>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&slact>, <&kp>;
+        };
+
     };
 
         keymap {
@@ -657,9 +693,9 @@
   ┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
   pers email     #         &       copy link  bitwarden                     contextmenu    $           *             %       chat gpt      
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-     hyper   number lay    @        layer 1   select all                       arrow       !        brackets       hyphen     hyper       
+     hyper    schedule     @        layer 1   select all                       arrow       !        brackets       hyphen     hyper       
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-     undo    clipboard    copy       paste     layer 4                        obsidian  em dash      date 1        date 2    question   
+     undo    clipboard    copy       paste     layer 4                       dictation  em dash      date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
                              shift      number layer                     play/pause layer 2                    
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
@@ -668,9 +704,9 @@
 //┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
 &emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &ht BBIT B              &ht LC(RET) Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M        &ht LS(N1) N  &ab 0 E       &ed 0 I       HYPER_A       
+HYPER_C      &sch 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M        &ht LS(N1) N  &ab 0 E       &ed 0 I       &sla 0 A       
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &ob 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
+&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &di 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
                            &sk LSHIFT   &tog 3                           &kp C_PP &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
@@ -683,7 +719,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 1 - navigation and editing - left index??
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   &kp BSPC   &kp LG(I) PLAINPASTE  XXX       XXX                            TAB_UP    &kp LG(MINUS) &kp UP     &kp LG(EQUAL)  CMD_W      
+   &kp BSPC   &kp LG(B) PLAINPASTE  XXX       XXX                            TAB_UP    &kp LG(MINUS) &kp UP     &kp LG(EQUAL)  CMD_W      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    &kp LSHFT  &kp LALT  &kp LGUI    XXX       REDO                           TAB_DN    &kp LEFT      &kp DOWN   &kp RIGHT      &kp TAB  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
@@ -700,7 +736,7 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 2 - symbols and media - right thumb
   
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE &kp LG(B)   &kp C_BRI_UP  &kp C_VOL_UP   XXX     
+   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE XXX         &kp C_BRI_UP  &kp C_VOL_UP   XXX     
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    XXX       XXX       &kp LGUI   &kp LBKT     &kp RBKT                      &kp BSLH  &kp BSPC    &kp C_BRI_DN  &kp C_VOL_DN   XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
@@ -717,11 +753,11 @@ HYPER_C      &hl_l 3 R    &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 3 - numbers and settings and nav - left ring finger
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   &kp C_PP   XXX      XXX        &kp LG(I)   XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
+   &kp BSPC   &kp C_PP   XXX       &kp LG(I)   XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   &kp C_NEXT XXX      &kp LGUI   &kp LG(U)   XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
+   XXX        &kp C_NEXT &kp LGUI  &kp LG(U)   XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX        XXX      XXX        XXX         XXX                            &kp N0    &kp N1     &kp N2        &kp N3      &kp MINUS            
+   XXX        XXX        XXX       XXX         XXX                            &kp N0    &kp N1     &kp N2        &kp N3      &kp MINUS            
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
