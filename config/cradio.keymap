@@ -423,13 +423,21 @@
             bindings = <&kp LG(O)>;
         };
 
-//refresh - left index bottom vertical
+//refresh - left index top vertical
         combo_cmdR {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <11 21>;
+            key-positions = <1 11>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(R)>;
         };
+
+//change name - left index bottom vertical
+//        combo_cmdR {
+//            timeout-ms = <COMBO_NORMAL>;
+//            key-positions = <11 21>;
+//            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
+//            bindings = <&kp LG(R)>;
+//        };
 
 //bullets - left top middle ring
         combo_bullets {
@@ -700,7 +708,7 @@
   ┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
   pers email     #         &       copy link  bitwarden                     contextmenu    $           *             %       chat gpt      
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-     hyper    schedule     @        layer 1   select all                       arrow       !        brackets       hyphen   slack activity
+     hyper slack activity  @        layer 1   select all                       arrow       !        brackets       hyphen    schedule
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
      undo    clipboard    copy       paste     layer 4                       dictation  em dash      date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
@@ -711,7 +719,7 @@
 //┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
 &emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &ht BBIT B              &ht LC(RET) Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-HYPER_C      &sch 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M        &ht LS(N1) N  &ab 0 E       &ed 0 I       &sla 0 A       
+HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M        &ht LS(N1) N  &ab 0 E       &ed 0 I       &sch 0 A       
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &di 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
@@ -743,7 +751,7 @@ HYPER_C      &sch 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 2 - symbols and media - right thumb
   
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE XXX         &kp C_BRI_UP  &kp C_VOL_UP   XXX     
+   XXX       XXX       XXX        &kp LS(LBKT) &kp LS(RBKT)                  &kp TILDE &kp F4      &kp C_BRI_UP  &kp C_VOL_UP   XXX     
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
    XXX       XXX       &kp LGUI   &kp LBKT     &kp RBKT                      &kp BSLH  &kp BSPC    &kp C_BRI_DN  &kp C_VOL_DN   XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
@@ -760,11 +768,11 @@ HYPER_C      &sch 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 3 - numbers and settings and nav - left ring finger
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   &kp BSPC   &kp C_PP   XXX       &kp LG(I)   XXX                            &kp F4    &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
+   &kp BSPC   &kp C_PP   XXX       &kp LG(I)   XXX                           &kp LS(FSLH) &kp N7  &kp N8        &kp N9      &kp LS(EQUAL)  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX        &kp C_NEXT &kp LGUI  &kp LG(U)   XXX                            &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
+   XXX        &kp C_NEXT &kp LGUI  &kp LG(U)   XXX                           &kp DOT      &kp N4  &kp N5        &kp N6      &kp EQUAL      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX        XXX        XXX       XXX         XXX                            &kp N0    &kp N1     &kp N2        &kp N3      &kp MINUS            
+   XXX        XXX        XXX       XXX         XXX                           &kp N0       &kp N1  &kp N2        &kp N3      &kp MINUS            
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
