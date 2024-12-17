@@ -728,6 +728,7 @@ HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 
                         >;
                 };
+                
                 lower_layer {
                         bindings = <
 
@@ -768,11 +769,11 @@ HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 3 - numbers and settings and nav - left ring finger
 
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   &kp BSPC   &kp C_PP   XXX       &kp LG(I)   XXX                           &kp LS(FSLH) &kp N7  &kp N8        &kp N9      &kp LS(EQUAL)  
+   &kp BSPC   &kp C_PP   XXX       &kp LG(I)   XXX                           &kp FSLH  &kp N7     &kp N8        &kp N9      &kp LS(EQUAL)  
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX        &kp C_NEXT &kp LGUI  &kp LG(U)   XXX                           &kp DOT      &kp N4  &kp N5        &kp N6      &kp EQUAL      
+   XXX        &kp C_NEXT &kp LGUI  &kp LG(U)   XXX                           &kp DOT   &kp N4     &kp N5        &kp N6      &kp EQUAL      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX        XXX        XXX       XXX         XXX                           &kp N0       &kp N1  &kp N2        &kp N3      &kp MINUS            
+   XXX        XXX        XXX       XXX         XXX                           &kp N0    &kp N1     &kp N2        &kp N3      &kp MINUS            
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
@@ -795,6 +796,7 @@ HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
                        // └────────────┴─────────┘                    └─────────┴─────────┘
                         >;
                 };
+
                 sym_layer {
                         bindings = <                    
 
