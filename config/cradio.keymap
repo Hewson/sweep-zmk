@@ -238,13 +238,13 @@
             bindings = <&kp SQT>;
         };
 
-//cmd k - left - left index vertical bottom
-        combo_cmdK_l {             
-            timeout-ms = <COMBO_SLOW>;
-            key-positions = <13 23>;
-            require-prior-idle-ms = <50>;
-            bindings = <&kp LG(K)>;
-        };
+//change later - left index vertical bottom
+//        combo_cmdK_l {             
+//            timeout-ms = <COMBO_SLOW>;
+//            key-positions = <13 23>;
+//            require-prior-idle-ms = <50>;
+//            bindings = <&kp LG(K)>;
+//        };
 
 //cmd k - right - right index vertical bottom
 //        combo_cmdK_r {             
@@ -301,6 +301,14 @@
             key-positions = <12 13>;
             require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <RAYCAST>;
+        };
+
+//cmd k - left ring index
+        combo_cmdK_l {             
+            timeout-ms = <COMBO_SLOW>;
+            key-positions = <11 13>;
+            require-prior-idle-ms = <50>;
+            bindings = <&kp LG(K)>;
         };
 
 //return
@@ -706,24 +714,24 @@
 
 /* hold functions
   ┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-  pers email     #         &       copy link  bitwarden                     contextmenu    $           *             %       chat gpt      
+   pers email    #         &       copy link  bitwarden                     contextmenu    $           *             %       chat gpt      
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
      hyper slack activity  @        layer 1   select all                       arrow       !        brackets       hyphen    schedule
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-     undo    clipboard    copy       paste     layer 4                       dictation  em dash      date 1        date 2    question   
+      undo   clipboard   copy        paste     layer 4                       dictation  em dash      date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                             shift      number layer                     play/pause layer 2                    
+                              shift    number layer                      control   layer 2                    
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 
-//┌───────┬─────────┬──────────┬───────────┬─────────┐                      ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-&emp 0 W     &ht LS(N3) L &ht LS(N7) Y  &cl 0 P      &ht BBIT B              &ht LC(RET) Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
+//┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
+&emp 0 W    &ht LS(N3) L  &ht LS(N7) Y  &cl 0 P      &ht BBIT B              &ht LC(RET) Z  &ht LS(N4) F  &ht LS(N8) O  &ht LS(N5) U  &ht GGPT SEMI      
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M        &ht LS(N1) N  &ab 0 E       &ed 0 I       &sch 0 A       
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &di 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &tog 3                           &kp C_PP &gqt_l 2 SPACE   
+                           &sk LSHIFT   &tog 3                           &kp LCTRL &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
 
                         >;
