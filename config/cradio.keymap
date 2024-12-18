@@ -760,11 +760,11 @@ HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 // layer 2 - symbols and media - right thumb
   
 //┌─────────┬─────────┬──────────┬───────────┬─────────┐                    ┌─────────┬──────────┬─────────────┬───────────┬──────────┐
-   XXX        &kp LBKT   &kp RBKT   &kp LS(LBKT) &kp LS(RBKT)                &kp TILDE &kp F4      &kp C_BRI_UP  &kp C_VOL_UP   XXX     
+   XXX        &kp LBKT   &kp RBKT   &kp LS(LBKT) &kp LS(RBKT)                                  &kp TILDE &kp F4      &kp C_BRI_UP  &kp C_VOL_UP   XXX     
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   &kp LC(N4) &kp LC(N3) &kp LC(N2) &kp LC(N1)   &kp LC(N5)                  &kp BSLH  &kp BSPC    &kp C_BRI_DN  &kp C_VOL_DN   XXX
+&kp LG(LC(LA(N4))) &kp LG(LC(LA(N3))) &kp LG(LC(LA(N2))) &kp LG(LC(LA(N1))) &kp LG(LC(LA(N5))) &kp BSLH  &kp BSPC    &kp C_BRI_DN  &kp C_VOL_DN   XXX
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-   XXX        XXX        XXX        XXX          XXX                         XXX       &kp LS(N9)  &kp LS(N0)    XXX            XXX     
+   XXX        XXX        XXX        XXX          XXX                                           XXX       &kp LS(N9)  &kp LS(N0)    XXX            XXX     
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘
                             ___          ___                            ___        ___      
                        // └────────────┴─────────┘                    └─────────┴─────────┘
