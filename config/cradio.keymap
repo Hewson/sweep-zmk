@@ -386,7 +386,7 @@
 //cmd comma
         combo_cmdComma {
             timeout-ms = <COMBO_NORMAL>;
-            key-positions = <5 15>;
+            key-positions = <6 16>;
             require-prior-idle-ms = <150>;
             bindings = <&kp LG(COMMA)>;
         };
@@ -720,7 +720,7 @@
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
       undo   clipboard   copy        paste     layer 4                       dictation  em dash      date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                              shift    number layer                      control   layer 2                    
+                              shift    number layer                         meh     layer 2                    
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 
@@ -731,7 +731,7 @@ HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &di 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &tog 3                           &kp LCTRL &gqt_l 2 SPACE   
+                           &sk LSHIFT   &tog 3                       &kp LG(LC(LALT)) &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
 
                         >;
