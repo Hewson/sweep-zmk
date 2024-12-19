@@ -731,7 +731,8 @@ HYPER_C      &sla 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 &ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &di 0 X        &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                           &sk LSHIFT   &mo 3                       &kp LG(LC(LALT)) &gqt_l 2 SPACE   
+                              &mo 3   &sk LSHIFT                     &gqt_l 2 SPACE  &kp LG(LC(LALT)) 
+//                           &sk LSHIFT   &mo 3                       &kp LG(LC(LALT)) &gqt_l 2 SPACE   
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
 
                         >;
