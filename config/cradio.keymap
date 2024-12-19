@@ -234,7 +234,7 @@
         combo_aprost {
             timeout-ms = <COMBO_FAST>;
             key-positions = <17 18>;
-            require-prior-idle-ms = <30>;
+            require-prior-idle-ms = <60>;
             bindings = <&kp SQT>;
         };
 
