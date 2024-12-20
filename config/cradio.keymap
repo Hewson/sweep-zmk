@@ -305,9 +305,9 @@
 
 //cmd k - left ring index
         combo_cmdK_l {             
-            timeout-ms = <COMBO_SLOW>;
+            timeout-ms = <COMBO_FAST>;
             key-positions = <11 13>;
-            require-prior-idle-ms = <50>;
+            require-prior-idle-ms = <COMBO_TAPPING_TERM>;
             bindings = <&kp LG(K)>;
         };
 
