@@ -136,6 +136,15 @@
                 ;
         };
 
+
+        scalet: scalet {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LS(N3) &kp S &kp C &kp A &kp L &kp E>
+                ;
+        };
+
         tdate: tdate {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -719,6 +728,15 @@
             flavor = "tap-preferred";
             bindings = <&tdist>, <&kp>;
         };
+//scale todoist
+        sct: sct {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping_term_ms = <HOLD_TIME>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&scalet>, <&kp>;
+        };
 
 
     };
@@ -736,9 +754,9 @@
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
      hyper    todoist      @        layer 1   select all                       arrow       !        brackets       hyphen    schedule
   ├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-      undo   clipboard    copy       paste     layer 4                       dictation  em dash      date 1        date 2    question   
+      undo   clipboard    copy       paste     layer 4                      scale # tag em dash      date 1        date 2    question   
   └─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                              shift    number layer                         meh     layer 2                    
+                           number layer   shift                           layer 2     meh                   
                           └────────────┴─────────┘                      └─────────┴─────────┘                                           */
 
 
@@ -747,10 +765,9 @@
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
 HYPER_C      &tdt 0 R     &ht LS(N2) S  &hl_l 1 T    &sal 0 G                &ra 0 M   &ht LS(N1) N  &ab 0 E       &ed 0 I       &sch 0 A       
 //├─────────┼─────────┼──────────┼───────────┼─────────┤                    ├─────────┼──────────┼─────────────┼───────────┼──────────┤
-&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &di 0 X   &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
+&ht LG(Z) Q  &ht CCLIP J  &ht LG(C) V   &ht LG(V) D  &hl_l 4 K               &sct 0 X  &emd 0 H      &td 0 COMMA   &ttd 0 DOT    AS_FSLH   
 //└─────────┴─────────┴───┬──────┴─────┬─────┴───┬─────┘                    └───┬─────┴───┬──────┴─────────────┴───────────┴──────────┘   
-                              &mo 3   &sk LSHIFT                     &gqt_l 2 SPACE  &kp LG(LC(LALT)) 
-//                           &sk LSHIFT   &mo 3                       &kp LG(LC(LALT)) &gqt_l 2 SPACE   
+                              &mo 3     &sk LSHIFT                     &gqt_l 2 SPACE  &kp LG(LC(LALT)) 
                        // └────────────┴─────────┘                      └─────────┴─────────┘ 
 
                         >;
