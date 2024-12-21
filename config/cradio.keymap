@@ -142,6 +142,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LS(N3) &kp S &kp C &kp A &kp L &kp E>
+                , <&kp TAB>
                 ;
         };
 
@@ -232,7 +233,6 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp LS(LG(LC(LA(K))))> 
-                , <&kp TAB>
                 ;
         };
     };
